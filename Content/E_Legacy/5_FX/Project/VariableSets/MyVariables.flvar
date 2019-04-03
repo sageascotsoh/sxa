@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName">SAGE</Variable>
+  <Variable
+    Name="ShortProductName"
+    Comment=""
+    Definition="Some text">FX</Variable>
+  <Variable
+    Name="DocTitle"
+    Comment=""
+    Definition="Some text">Manuel de l'utilisateur</Variable>
+  <Variable
+    Comment=""
+    Name="Running H/F 6">&lt;$paratext[h6]&gt;</Variable>
+  <Variable
+    Comment=""
+    Name="Running H/F 5">&lt;$paratext[h5]&gt;</Variable>
+  <Variable
+    Comment=""
+    Name="Running H/F 4">&lt;$paratext[h4]&gt;</Variable>
+  <Variable
+    Comment=""
+    Name="Running H/F 3">&lt;$paratext[h3]&gt;</Variable>
+  <Variable
+    Comment=""
+    Name="Running H/F 2">&lt;$paratext[h2]&gt;</Variable>
+  <Variable
+    Comment=""
+    Name="Running H/F A">&lt;$paratext[h1_NonNumm&gt;</Variable>
+  <Variable
+    Name="ApplicationVersionNo."
+    Comment=""
+    Definition="Some text">3.0</Variable>
+  <Variable
+    Name="CashFlowAppName"
+    Comment=""
+    Definition="Some text">Cash</Variable>
+  <Variable
+    Name="DocYear"
+    Comment=""
+    Definition="Some text">2010</Variable>
+  <Variable
+    Name="SoftwareName"
+    Comment=""
+    Definition="Some text">SAGE XRT Treasury</Variable>
+  <Variable
+    Name="ParamAppName"
+    Comment=""
+    Definition="Some text">Paramétrage</Variable>
+  <Variable
+    Name="MarcheAppName"
+    Comment=""
+    Definition="Some text">Données de marché</Variable>
+  <Variable
+    Name="ModulesTaskName"
+    Comment=""
+    Definition="Some text">Tâches de modules</Variable>
+  <Variable
+    Name="DashboardsTaskName"
+    Comment=""
+    Definition="Some text">Tâches de Dashboards</Variable>
+  <Variable
+    Name="ParamRepName"
+    Comment=""
+    Definition="Some text">Paramétrage</Variable>
+  <Variable
+    Name="ReportsRepName"
+    Comment=""
+    Definition="Some text">Édition</Variable>
+  <Variable
+    Name="ImportRepName"
+    Comment=""
+    Definition="Some text">Importation / Exportation</Variable>
+  <Variable
+    Name="GestionRepName"
+    Comment=""
+    Definition="Some text">Gestion</Variable>
+  <Variable
+    Name="GuideID"
+    Comment=""
+    Definition="Some text">FRP-FX-3-UFR1</Variable>
+  <Variable
+    Name="ProcessRepName"
+    Comment=""
+    Definition="Some text">Traitement</Variable>
+  <Variable
+    Name="ComptaAppName"
+    Comment=""
+    Definition="Some text">Comptabilité</Variable>
+  <Variable
+    Name="CommunicationAppName"
+    Comment=""
+    Definition="Some text">Communication</Variable>
+  <Variable
+    Name="AdminAppName"
+    Comment=""
+    Definition="Some text">Administration</Variable>
+  <Variable
+    Name="OpFinAppName"
+    Comment=""
+    Definition="Some text">Opérations Financières</Variable>
+</CatapultVariableSet>

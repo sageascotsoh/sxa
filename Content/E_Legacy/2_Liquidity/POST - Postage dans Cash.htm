@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="&gt; Sage XRT&#160;Treasury|[%=System.LinkedTitle%]" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Création des flux de trésorerie dans le module Cash</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Warning.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Note.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Tableau standard.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="kanchor283"></a>Création des flux de trésorerie dans le module Cash</h1>
+                                            <p data-mc-conditions="">Cette fonction vous permet de générer des flux dans le module <span style="font-weight: bold;" class="LocalizationSXT_Cash">Trésorerie</span> à partir des transactions budgétaires.</p>
+                                            <p class="SautLigne" data-mc-conditions="">Au préalable, vous devez avoir paramétré les éléments suivants qui définissent les règles de création des flux de trésorerie à partir des transactions budgétaires&#160;:</p>
+                                            <ul>
+                                                <li class="PuceNiv1" value="1" data-mc-conditions="">l'onglet <b>Code budgétaire - Compte</b> de la page de paramétrage de l'exercice budgétaire (<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"><a href="PARAM - Exercice budgetaire.htm#onglet_postage1">cliquez ici</a> pour consulter la rubrique</MadCap:conditionalText>),</li>
+                                                <li class="PuceNiv1" value="2" data-mc-conditions="">l'onglet <b>Compte - Code flux</b> de la page de paramétrage de l'exercice budgétaire (<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"><a href="PARAM - Exercice budgetaire.htm#onglet_postage2">cliquez ici</a> pour consulter la rubrique</MadCap:conditionalText>),</li>
+                                                <li class="PuceNiv1" value="3" data-mc-conditions="">les tables de répartition, si vous souhaitez répartir les montants sur plusieurs dates en fonction du calendrier de votre organisation (consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="PARAM - Tables de repartition.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Tables de répartition</a></MadCap:conditionalText> pour plus d'informations).</li>
+                                            </ul>
+                                            <p class="SautLigne" data-mc-conditions="">Vous définissez ensuite des tâches de création de flux de trésorerie, que vous pouvez lancer immédiatement ou ultérieurement.</p>
+                                            <p data-mc-conditions="">Dans cette fonction, une tâche est un ensemble de paramètres définissant les critères de sélection des transactions budgétaires pour la création des flux de trésorerie ainsi que les modalités de création des ces derniers.</p>
+                                            <p class="SautLigne" data-mc-conditions="">Vous avez la possibilité de relancer plusieurs fois une même tâche, par exemple lorsque votre budget a été modifié depuis le dernier lancement de la tâche.</p>
+                                            <p class="SautLigneAvantEtAprès" data-mc-conditions="">Enfin, vous pouvez consulter les flux de trésorerie associés à chaque tâche à partir du journal de trésorerie.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Accéder à la page de gestion des tâches</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p data-mc-conditions="">Dans le volet <b><span class="LocalizationSXTModulesTasks">Tâches de Modules</span></b>, sélectionnez l'option <b>Poster dans la Trésorerie</b> dans le dossier <b><span class="LocalizationSXTManagementFolder">Gestion</span></b> du module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span>.</p>
+                                                    <p class="SautLigne" data-mc-conditions="">La page des tâches de création des flux de trésorerie s'affiche avec la liste des tâches enregistrées sous forme de tableau.</p>
+                                                    <p class="SautLigne" data-mc-conditions="">Le tableau présente la date de création des flux de trésorerie si cette tâche a déjà été lancée, le nombre de flux de trésorerie générés à partir de cette tâche, ainsi que la date de début et la date de fin de la période de sélection des transactions budgétaires d'origine.</p>
+                                                    <p data-mc-target-name="Capture importation 1"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Flux treso 1.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="670" data-mc-height="398" src="../../Resources/Images/L_Liquidity/Flux treso 1_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="SautLigne">Pour des informations sur&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv1" style="margin-top: 12pt" value="1" data-mc-conditions="Default.ScreenOnly"><b>la réorganisation de l'affichage des lignes</b> du tableau, <a href="ANNEXE - GUI - Tableau reorg.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>,</li>
+                                                        <li class="PuceNiv1" value="2" data-mc-conditions="Default.ScreenOnly"><b>la recherche de texte</b> dans le tableau, <a href="ContextualTopics/Rechercher texte dans tableau parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                        <li class="PuceNiv1" value="3" data-mc-conditions=""><b>la création d'une ligne, la consultation du détail d'une tâche ou le lancement d'une tâche</b>, consultez les<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> rubriques</MadCap:conditionalText> ci-après. </li>
+                                                        <li class="PuceNiv1" value="4" data-mc-conditions="Default.ScreenOnly"><b>la suppression d'une ligne</b> dans le tableau, <a href="ContextualTopics/Supprimer element dans tableau page parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Consulter le détail d'une tâche</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Dans la page des tâches de création des flux de trésorerie, double-cliquez sur une tâche ou sélectionnez une tâche puis cliquez sur le bouton <b>Afficher le détail</b>.</p>
+                                                    <p>La page de détail de la tâche s'affiche en mode consultation.</p>
+                                                    <p>Consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique</MadCap:conditionalText> suivante pour plus d'informations sur cette page.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Créer une tâche</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1" data-mc-conditions="">Dans la page des tâches de création des flux de trésorerie, cliquez sur le bouton <b>Créer</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-conditions="">La page de détail de la nouvelle tâche s'affiche en mode création.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Newtask1" data-mc-conditions=""><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Flux treso 2.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="507" data-mc-height="595" src="../../Resources/Images/L_Liquidity/Flux treso 2_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2" data-mc-conditions="">Dans l'onglet <b>Entités</b>, sélectionnez les entités liées aux transactions budgétaires à sélectionner, comme suit.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Dans la zone <b>Sélection par</b>, sélectionnez l'une des options décrites ci-après.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1">Pour afficher toutes les entités paramétrées, activez la case d'option <b>Tout</b>.</li>
+                                                    </ul>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1">Pour effectuer un filtrage sur les entités, activez la case d'option      <b>Entités</b>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv2">Le bouton <b>Sélectionner </b>est activé dans la zone <b>Entités</b>. Cliquez sur ce bouton puis, dans la fenêtre contextuelle qui s'affiche, activez les cases à cocher correspondant aux entités à inclure dans la sélection.</p>
+                                                    <p class="IndentPuceNiv2">Cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton coche bleue.JPG" /> pour valider votre sélection.</p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">La liste affiche uniquement les entités pour lesquelles au moins un exercice budgétaire est créé.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv2">Les entités sélectionnées sont affichées dans la zone <b>Entités</b>.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1">Pour effectuer un filtrage sur les groupes d'entités, activez la case d'option <b>Groupes d'entités</b>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv2">Le bouton <b>Sélectionner </b>est activé dans la zone <b>Entités</b>. Cliquez sur ce bouton puis, dans la fenêtre contextuelle qui s'affiche, activez les cases à cocher correspondant aux groupes d'entités à inclure dans la sélection.</p>
+                                                    <p class="IndentPuceNiv2">Cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton coche bleue.JPG" /> pour valider votre sélection.</p>
+                                                    <p class="IndentPuceNiv2">Les groupes d'entités sélectionnés s'affichent dans la zone <b>Entités</b>.</p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">La liste affiche uniquement les groupes d'entités pour lesquels au moins un exercice budgétaire est créé.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol start="3">
+                                                        <li class="PuceNumNiv1" value="3" data-mc-conditions="">Cliquez sur l'onglet <b>Options</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Newtask2" data-mc-conditions=""><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Flux treso 3.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="507" data-mc-height="596" src="../../Resources/Images/L_Liquidity/Flux treso 3_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1" data-mc-conditions="">La zone <b>Périodes</b> vous permet de sélectionner les périodes d'exercice liées aux transactions budgétaires à sélectionner. Vous pourrez restreindre l'étendue de cette période dans l'onglet suivant.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="4">Dans cette zone, cliquez sur le bouton <b>Sélectionner </b>puis, dans la fenêtre contextuelle qui s'affiche, activez les cases à cocher correspondant aux périodes d'exercice à sélectionner et cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton coche bleue.JPG" /> pour valider votre sélection.</li>
+                                                    </ol>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">La liste affiche uniquement les périodes pour lesquelles au moins un exercice budgétaire est créé.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1">Le code et le libellé des périodes d'exercice sélectionnées s'affichent dans la zone <b>Périodes</b>.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="5" data-mc-conditions="">Dans la zone <b>Statut</b>, sélectionnez le statut à appliquer aux flux de trésorerie générés&#160;:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1" data-mc-conditions="">Prévision d'origine</li>
+                                                        <li class="PuceNiv2" value="2" data-mc-conditions="">Prévision confirmée</li>
+                                                        <li class="PuceNiv2" value="3" data-mc-conditions="">Réalisé</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1">Consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_Cash">Trésorerie</span> pour plus d'informations sur ces options.</p>
+                                                    <ol start="6">
+                                                        <li class="PuceNumNiv1" value="6" data-mc-conditions="">Dans la zone <b>Règles de totalisation</b>, définissez les critères de regroupement des transactions budgétaires si vous souhaitez générer un flux de trésorerie unique pour plusieurs transactions, comme suit.</li>
+                                                    </ol>
+                                                    <ol>
+                                                        <li class="PuceNumNiv2" value="1" data-mc-conditions="">Activez la case à cocher <b>Code budgétaire identique</b> pour regrouper les transactions budgétaires de même nature.</li>
+                                                        <li class="PuceNumNiv2" value="2" data-mc-conditions="">Activez la case à cocher <b>Libellé identique</b> pour regrouper les transactions budgétaires portant le même libellé.</li>
+                                                        <li class="PuceNumNiv2" value="3" data-mc-conditions="">Dans le champ <b>Montant seuil</b>, définissez le montant minimum des transactions budgétaires à regrouper. Laissez ce champ à zéro si vous ne souhaitez pas définir de montant minimum pour le regroupement des transactions budgétaires.</li>
+                                                    </ol>
+                                                    <ol start="7">
+                                                        <li class="PuceNumNiv1" value="7" data-mc-conditions="">Cliquez sur l'onglet <b>Mode de postage</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Newtask3"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Flux treso 4.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="456" data-mc-height="426" src="../../Resources/Images/L_Liquidity/Flux treso 4_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="8" data-mc-conditions="">Dans les champs <b>Date de début</b> et <b>Date de fin</b> de la zone <b>Périodes</b>, sélectionnez la date de début et la date de fin de la période dans laquelle doivent se situer les transactions budgétaires à sélectionner, en saisissant ces dates ou en utilisant le calendrier.<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> Pour plus d'informations sur l'utilisation du calendrier, <a href="ContextualTopics/Calendrier.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</MadCap:conditionalText></li>
+                                                        <li class="PuceNumNiv1" value="9" data-mc-conditions="">Dans la zone <b>Appliquer</b>, activez la case à cocher&#160;:</li>
+                                                    </ol>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1" data-mc-conditions=""><b>Conditions de réalisation</b> si vous souhaitez appliquer les conditions de valeur négociées avec les banques (qui déterminent les dates de valeur des flux),</li>
+                                                        <li class="PuceNiv2" value="2" data-mc-conditions=""><b>Flux de rétention</b> si vous souhaitez appliquer les conditions de frais aux flux assujettis aux frais,</li>
+                                                        <li class="PuceNiv2" value="3" data-mc-conditions=""><b>Flux intragroupe</b>, si vous souhaitez générer des flux intragroupe.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1">Consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_Cash">Trésorerie</span> pour plus d'informations sur ces options.</p>
+                                                    <ol start="10">
+                                                        <li class="PuceNumNiv1" value="10">Cliquez sur le bouton <b>OK </b>pour enregistrer le paramétrage de la tâche ou sur le bouton <b>Annuler </b>pour annuler.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Un message d'avertissement s'affiche si la période de sélection des transactions budgétaires commence avant la date du jour. Cliquez sur <b>Oui</b> si vous souhaitez créer des flux de trésorerie avec une date antérieure à la date du jour ou sur <b>Non</b> pour redéfinir les dates de cette période.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-conditions=""><a name="page_sel_flux"></a>Si vous avez validé la création de la tâche, la page de sélection des transactions budgétaires s'affiche.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Newtask4" data-mc-conditions=""><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Flux treso 5.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="754" data-mc-height="440" src="../../Resources/Images/L_Liquidity/Flux treso 5_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1" data-mc-conditions="">Cette page affiche les flux de trésorerie pouvant être générés à partir des critères de sélection que vous avez définis<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">.</MadCap:conditionalText></p>
+                                                    <p class="IndentPuceNiv1SautLigne"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau colonnes"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description du tableau</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');margin-left: 0;margin-right: auto;display: none;" data-mc-target-name="Tableau colonnes">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Colonne</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Description</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Modification</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Flux</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Nature du flux de trésorerie</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une valeur dans une liste</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Compte</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Compte bancaire</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une valeur dans une liste</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date opéra.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Date d'opération du flux</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une date dans le calendrier</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date de valeur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Date de valeur du flux</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une date dans le calendrier</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Devise Trn</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Devise du flux</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une valeur dans une liste</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Montant Trn</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Montant du flux exprimé dans la devise de transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Saisie au clavier dans le champ</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Devise de ctrv</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Devise de contre-valeur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une valeur dans une liste</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Montant Ctrv</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Montant du flux exprimé dans la devise de contre-valeur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Saisie au clavier dans le champ</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Code budgétaire</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Nature budgétaire</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une valeur dans une liste</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Libellé</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Description courte du flux</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélection d'une valeur dans une liste</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Référence</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">Référence externe du flux</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1"><b>Non modifiable</b>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="11" data-mc-conditions="">Si vous le souhaitez, vous pouvez modifier les caractéristiques du flux directement dans les champs de cette page, à l'exception de la référence du flux. Reportez-vous au tableau ci-dessus pour plus d'informations.</li>
+                                                        <li class="PuceNumNiv1" value="12" data-mc-conditions="">Procédez comme suit pour lancer la tâche immédiatement ou ultérieurement.</li>
+                                                    </ol>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1" data-mc-conditions="">Si vous souhaitez générer les flux de trésorerie <u>ultérieurement</u>, cliquez sur le bouton <b>Annuler</b>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv2" data-mc-conditions="">La page de gestion des tâches s'affiche. La nouvelle tâche est ajoutée au tableau.</p>
+                                                    <p class="IndentPuceNiv2" data-mc-conditions="">Reportez-vous à la procédure ci-après pour générer ultérieurement ces flux.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1" data-mc-conditions="">Si vous souhaitez générer les flux de trésorerie <u>immédiatement</u>, activez les cases à cocher en regard des lignes à sélectionner, puis cliquez sur le bouton <b>Poster</b> pour lancer la tâche.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv2" data-mc-conditions="">Un message d'avertissement s'affiche si des flux de trésorerie ont déjà été générés pour la période sélectionnée, que ce soit à partir de cette tâche ou d'une autre.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv3" value="1" data-mc-conditions="">Cliquez sur <b>Non</b> pour conserver les flux générés antérieurement.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv3" data-mc-conditions="">La création des flux sélectionnés est annulée et la page de gestion des tâches est réaffichée.</p>
+                                                    <p class="IndentPuceNiv3" data-mc-conditions="">Dans cette page, la nouvelle tâche est ajoutée au tableau.</p>
+                                                    <p class="IndentPuceNiv3" data-mc-conditions="">La création des flux étant annulée, les champs <b>Date de postage</b> et <b>Nb de flux</b> ne sont pas renseignés pour cette tâche.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv3" value="1" data-mc-conditions="">Cliquez sur <b>Oui</b> pour supprimer les flux de trésorerie générés antérieurement et lancer la création des flux sélectionnés.</li>
+                                                    </ul>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Warning.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Warning" cellspacing="0">
+                                                        <col class="TableStyle-Warning-Column-Column1" />
+                                                        <col class="TableStyle-Warning-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Warning-Body-Body1">
+                                                                <td class="TableStyle-Warning-BodyB-Column1-Body1" style="text-align: left;">
+                                                                    <img src="../../Resources/Images/Assets/oh-Warning.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Warning-BodyA-Column2-Body1">Si vous cliquez sur <b>Oui</b>, <u>tous</u> les flux générés antérieurement pour la même période seront écrasés.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv3" data-mc-conditions="">La tâche est lancée et la page de gestion des tâches est réaffichée.</p>
+                                                    <p class="IndentPuceNiv3" data-mc-conditions="">Dans cette page, la nouvelle tâche est ajoutée au tableau.</p>
+                                                    <p class="IndentPuceNiv3" data-mc-conditions="">Les champs <b>Date de postage</b> et <b>Nb de flux</b> sont renseignés pour cette tâche avec la date du jour et le nombre flux générés.</p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">Dès lors qu'une tâche est créée, vous ne pouvez plus la modifier. Si vous souhaitez inclure d'autres paramètres, vous devez créer une autre tâche.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Générer les flux de trésorerie</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p data-mc-conditions="">Dans la page des tâches de création des flux de trésorerie, cliquez sur une ligne correspondant à une tâche, puis sur le bouton <b>Envoyer ver le module Trésorerie</b>.</p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Warning.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Warning" cellspacing="0">
+                                                        <col class="TableStyle-Warning-Column-Column1" />
+                                                        <col class="TableStyle-Warning-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Warning-Body-Body1">
+                                                                <td class="TableStyle-Warning-BodyB-Column1-Body1" style="text-align: left;">
+                                                                    <img src="../../Resources/Images/Assets/oh-Warning.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Warning-BodyA-Column2-Body1">Les cases à cocher en regard des lignes du tableau ne permettent pas de sélectionner les tâches pour la création des flux. La ligne sélectionnée pour cette fonctionnalité est toujours la ligne grisée, c'est-à-dire la dernière ligne sur laquelle vous avez cliqué.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p data-mc-conditions="">La page de sélection des transactions budgétaires s'affiche.</p>
+                                                    <p data-mc-conditions="">
+                                                        <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"><a href="#page_sel_flux">Cliquez ici</a>
+                                                        </MadCap:conditionalText> pour connaître la procédure détaillée de lancement de la tâche.</p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1"><span>Si vous relancez une même tâche ou si vous lancez une tâche dont la période recoupe celle d'une tâche lancée antérieurement, tous les flux de trésorerie générés antérieurement dans la même période à partir du module </span><span style="font-weight: bold" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span> seront supprimés. Le total des flux de trésorerie générés pour chaque tâche est alors mis à jour dans la page de gestion des tâches de création des flux de trésorerie.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

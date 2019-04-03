@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Sage XRT Advanced 2.0 - Nouvelles Fonctions</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Toolbar-FR_4.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_NewFeaturesToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                            </div>
+                                        </div> </div>
+                                    <div><a name="aanchor0"></a>
+                                        <MadCap:concept term="New Features" />
+                                        <h1 class="NewFeatures"><span class="LocalizationSXA">Sage XRT&#160;Advanced</span> 2.0</h1>
+                                        <h2 class="NewFeatures"><a name="SXA.2.0.EspaceBancaire"></a>Espace Bancaire</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">Dans la version 2.0 de <span class="LocalizationSXA">Sage XRT&#160;Advanced</span>, le module <span style="font-weight: bold;" class="LocalizationSXA_Bank">Espace Bancaire</span> a pour objectif de centraliser les données bancaires importées. Dans les futures versions, cet espace sera enrichi par différents types d’analyses et de statistiques.</p>
+                                            <p>Dans le menu <b>Paramétrage</b>, un sous-menu est ajouté pour accéder à l’<span style="font-weight: bold;" class="LocalizationSXA_Bank">Espace Bancaire</span>. Dans cet espace, les relevés et les écritures importés sont disponibles.</p>
+                                            <p>Lors d’un import réussi, les relevés sont automatiquement postés dans les modules <span style="font-weight: bold;" class="LocalizationSXA_Cash">Trésorerie</span> et <span style="font-weight: bold;" class="LocalizationSXA_Reconciliation">Rapprochement</span>. Dans le cas d’un rejet, principalement à cause d’un paramétrage erroné, les relevés peuvent être postés manuellement une fois les corrections nécessaires effectuées.</p>
+                                            <p>Les écritures bancaires importées dans la plate-forme sont disponibles sous le menu <b>Administration</b> – <b>Ecriture fichier Bancaire</b>.</p>
+                                            <p>Les relevés bancaires importés ainsi que leur statut sont disponibles sous le menu <b>Administration</b> – <b>Relevé du fichier Bancaire</b>.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.BankArea.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1591" data-mc-height="795" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.BankArea_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                        <h2 class="NewFeatures"><span class="LocalizationSXA_MarketData">Données de Marché</span>
+                                        </h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">Le module a pour objectif de centraliser les données de marchés intégrées d’une source externe ou saisies manuellement.</p>
+                                            <p>Dans le menu <b>Paramétrage</b>, un sous-menu est ajouté pour accéder à l’espace <span style="font-weight: bold;" class="LocalizationSXA_MarketData">Données de Marché</span>, dans lequel peuvent être saisis ou importés les cours de devises et les places de cotation.</p>
+                                        </div>
+                                        <h2 class="NewFeatures">Import fichier : format JSON</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">La fonctionnalité <b>Import au format JSON</b> est disponible pour deux nouvelles entités : <b>Devises</b> et <b>Pays</b>. L’objectif est d’initialiser automatiquement ces deux entités de base.</p>
+                                            <p>L’import <b>JSON</b> peut être lancé à partir des menus <b>Action</b> – <b>Exporter</b> – <b>Importer ficher</b> – <b>Importer (JSON)</b>.</p>
+                                        </div>
+                                        <h2 class="NewFeatures"><a name="SXA2.0.AjoutCommentaire"></a>Action : Ajout Commentaire</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">L’action <b>Ajout Commentaire</b> est dorénavant disponible pour toutes les entités. Dès la sélection d’une ou plusieurs lignes, l’action est affichée.</p>
+                                            <p>Pour faire apparaître cette action dans la grille, la colonne <b>Commentaires/Ecritures/ID</b> doit être ajoutée à la vue utilisée.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.AddCommentAction.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1595" data-mc-height="522" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.AddCommentAction_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                        <h2 class="NewFeatures"><a name="SXA2.0..Dashboards"></a>Dashboards délivrés par défaut</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">Trois nouveaux Dashboards sont livrés par défaut : <span style="font-weight: bold;" class="LocalizationSXA_Reconciliation">Rapprochement</span>, <span style="font-weight: bold;" class="LocalizationSXA_Setup">Paramétrage</span> et <span style="font-weight: bold;" class="LocalizationSXA_BankDelegations">Pouvoirs Bancaires</span>.</p>
+                                            <p><span style="font-weight: bold;" class="LocalizationSXA_Reconciliation">Rapprochement</span>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.ReconciliationDashboard.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1585" data-mc-height="774" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.ReconciliationDashboard_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                            <p><span style="font-weight: bold;" class="LocalizationSXA_Setup">Paramétrage</span>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.SetupDashboard.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1595" data-mc-height="789" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.SetupDashboard_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                            <p><span style="font-weight: bold;" class="LocalizationSXA_BankDelegations">Pouvoirs Bancaires</span>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.BankDelegationsDashboard.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1598" data-mc-height="801" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.BankDelegationsDashboard_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                        <h2 class="NewFeatures"><a name="SXA2.0.EditeurDashboard"></a>Amélioration de l’éditeur de Dashboard</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">La liste des KPIs disponibles est groupée par fonctionnalité. Ce type d’affichage permet de faciliter le paramétrage des Dashboards.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.DashboardConfig.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="734" data-mc-height="757" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.DashboardConfig_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                        <h2 class="NewFeatures"><a name="SXA2.0.Grille"></a>Améliorations de la Grille</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">Sélection rapide</p>
+                                            <p>Pour sélectionner plusieurs lignes, il existe désormais deux possibilités :</p>
+                                            <ul>
+                                                <li value="1">positionner la souris sur une ligne et effectuer un glissé vers les lignes souhaitées,</li>
+                                                <li value="2">positionner la souris sur une ligne, appuyer sur la touche <b>Shift</b> et sélectionner une ligne de fin. Tous les éléments compris entre ces deux lignes sont ajoutés à la sélection.</li>
+                                            </ul>
+                                            <p class="NewFeaturesIntro">Remplacement de la pagination par une liste déroulante (<i>Scrollable List</i>)</p>
+                                            <p>Dans la vue, les options <b>Numérotation désactivée</b> et <b>Télécharger en mode défilement</b> doivent être activées.</p>
+                                            <p>La pagination en bas d’écran disparaît et les lignes s’affichent sous forme de liste déroulante.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.GridScrollList.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1316" data-mc-height="757" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.GridScrollList_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                            <p class="NewFeaturesIntro">Ajustement des colonnes</p>
+                                            <p>Dans la vue, Les options <b>Largeur de colonne auto-ajustée</b> et <b>défilement horizontal &amp; colonnes figées</b> doivent être activées pour permettre l’ajustement des colonnes.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.GridColumns.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1543" data-mc-height="621" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.GridColumns_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                            <p class="NewFeaturesIntro">Filtre sur les montants formatés</p>
+                                            <p>Les montants formatés se composent de trois informations : le montant, la devise et le sens. Dorénavant, dans le filtre rapide, il est possible de filtrer sur ces trois informations, dans une même colonne.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.GridFormatAmountFilters.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1590" data-mc-height="557" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.GridFormatAmountFilters_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                        <h2 class="NewFeatures"><a name="SXA2.0.GestionRejets"></a>Amélioration de la gestion des rejets</h2>
+                                        <div class="NewFeature">
+                                            <p class="NewFeaturesIntro">Dans la gestion des rejets comptables, il est possible de modifier les données champ par champ avant de lancer l’import à nouveau.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.RejectsManagement.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="1088" data-mc-height="565" src="../Resources/Images/NewFeatures/SXA.2.0/NewFeatures.SXA.2.0.RejectsManagement_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

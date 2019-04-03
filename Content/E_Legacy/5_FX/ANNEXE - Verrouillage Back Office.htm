@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="&gt; Sage XRT&#160;Treasury|[%=System.LinkedTitle%]|Gestion|Précisions fonctionnelles" data-mc-conditions="Default.3Revised" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Verrouillage back office</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Note.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Tableau standard.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="kanchor28"></a>Verrouillage <i>back office</i></h1>
+                                            <p>Certains champs liés aux caractéristiques de base des transactions ne peuvent pas être modifiés après la création des transactions, comme par exemple la société donneuse d'ordre, le couple de devises, etc.</p>
+                                            <p>D'autres champs peuvent en revanche être modifiés, comme le numéro de rattachement, le nom du contact, la date de la transaction, la date de livraison, etc.</p>
+                                            <p class="SautLigne">La validation <i>back office</i> des transactions permet de restreindre les possibilités de modification sur certains types de transaction lorsque le verrouillage <i>back office</i> est activé.</p>
+                                            <p>Pour activer ce verrouillage, vous devez activer la case à cocher <b>Verrouillage modification Back Office</b> dans l'onglet <b>Général</b> de la page <b>Configuration FX</b>.</p>
+                                            <p class="SautLigneAvantEtAprès">Pour plus d'informations sur la procédure de configuration du verrouillage, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="PARAM - Configuration FX.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Configuration FX</a>.</MadCap:conditionalText></p>
+                                            <p data-mc-target-name="Capture Configuration FX"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Configuration FX 1.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="471" data-mc-height="172" src="../../Resources/Images/L_FX/Configuration FX 1_thumb_150_100.png" tabindex="" /></a>
+                                            </p>
+                                            <p class="SautLigneAvantEtAprès">Les possibilités de modification sur une transaction validée en <i>back office</i> dépendent de la nature de la transaction, comme expliqué ci-dessous. Pour plus d'informations sur les natures des transactions de change, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="ANNEXE - Natures de transaction.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Natures de transactions de change</a>.</MadCap:conditionalText></p>
+                                            <ul>
+                                                <li class="PuceNiv1" value="1"><b>Transactions de change initiales</b>
+                                                </li>
+                                            </ul>
+                                            <p class="IndentPuceNiv1">Il s'agit des transactions de change ouvertes ayant la nature «&#160;Initiale&#160;», c'est-à-dire des transactions au comptant et à terme que vous avez créées manuellement.</p>
+                                            <p class="IndentPuceNiv1">Les possibilités de modification sur ces transactions de change dépendent de la configuration du verrouillage <i>back office</i>, comme décrit dans le tableau ci-après.</p>
+                                            <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                <col class="TableStyle-Note-Column-Column1" style="width: 31px;" />
+                                                <col class="TableStyle-Note-Column-Column2" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Note-Body-Body1">
+                                                        <td class="TableStyle-Note-BodyB-Column1-Body1">
+                                                            <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                        </td>
+                                                        <td class="TableStyle-Note-BodyA-Column2-Body1">Les transactions de change à terme dénouées ne sont pas concernées car elles ne peuvent pas être modifiées.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <ul>
+                                                <li class="PuceNiv1" value="1"><b>Autres transactions de change</b>
+                                                </li>
+                                            </ul>
+                                            <p class="IndentPuceNiv1">Il s'agit des transactions de change dont la nature est différente de «&#160;Initiale&#160;», c'est-à-dire&#160;:</p>
+                                            <ul>
+                                                <li class="PuceNiv2" value="1">modifiées ou créées à la suite d'une prorogation ou d'une levée anticipée,</li>
+                                                <li class="PuceNiv2" value="2">constituant la jambe aller ou retour d'une transaction de swap.</li>
+                                            </ul>
+                                            <p class="IndentPuceNiv1">Pour ces transactions, la configuration du verrouillage n'a aucune incidence&#160;: quelle que soit la configuration, les champs verrouillés sont les mêmes que ceux d'une transaction initiale lorsque le verrouillage est activé.</p>
+                                            <p class="SautLigneAvantEtAprès">Le tableau ci-après répertorie les champs modifiables dans les pages de gestion des transactions de change validées BO&#160;(<i>back office</i>) en fonction de la nature de la transaction et de la configuration du verrouillage <i>back office</i>. Les champs non modifiables ne sont pas répertoriés dans le tableau.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher le tableau</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <table cellspacing="0" class="TableStyle-Tableau_standard" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');" data-mc-target-name="Tableau">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">
+                                                                    <p class="tableau" style="text-align: left;font-size: 10pt;font-weight: bold;">Transaction validée BO (sauf jambe de swap ou renégociation)</p>
+                                                                </th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">
+                                                                    <p class="tableau" style="text-align: left;font-size: 10pt;font-weight: bold;">Transaction initiale, validée BO&#160;:<br />- verr. BO <u>activé</u><br />- ou issue d'une prorogation, levée anticipée ou d'un swap</p>
+                                                                </th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">
+                                                                    <p class="tableau" style="text-align: left;font-size: 10pt;font-weight: bold;">Transaction initiale validée BO, verr. BO <u>désactivé</u></p>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">En-tête</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">N° rattachement</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Onglet Caractéristiques</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Portefeuille</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Contact</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Modes Ctrv</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Montant</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Contre-valeur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date de transaction<br />Date&#160;de&#160;valeur&#160;spot&#160;*<br />Date de livraison<br /></td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Cours spot<br />Points de terme&#160;*<br />Cours à terme&#160;*</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1"><b style="font-weight: normal;">Bouton&#160;</b>
+                                                                    <img src="../../Resources/Images/L_FX/Bouton cours inverse.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Onglet Cours croisé</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;">Cours croisé&#160;1&#160;et&#160;2&#160;:<br />- <b>Cours spot</b><br />- <b>Points de terme</b>&#160;*<br />- <b>Cours à terme</b>&#160;*</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1"><b style="font-weight: normal;">Bouton&#160;</b>
+                                                                    <img src="../../Resources/Images/L_FX/Bouton cours inverse.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Onglet Dénouement</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;"><b>- Compte société</b>
+                                                                    </p>
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;"><b>- Date de valeur</b>
+                                                                    </p>
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;">(devise principale et contre-valeur)</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;"><b>Conversion</b> (bouton)</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Référence</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Onglet Back Office</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;"><b>Valider Back Office</b> (case à cocher)</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">
+                                                                    <p class="tableau" style="font-size: 10pt;font-weight: normal;"><b>- Catégorie</b> [comptable]<br /><b>- Type</b><br /><b>- Période</b></p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Onglet Zones utilisateur</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Remarques</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_25x21.gif" style="width: 25;height: 21;" />
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="SautLigne" data-mc-target-name="Tableau natures transaction">* Champs affichés uniquement dans le cas de transaction de change à terme</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="topic-hero center">
+            <div class="LangButton">
+                <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" data-mc-skin="/Project/Skins/LangPicker.flskn" />
+            </div>
+            <h1>Online Help Center</h1>
+            <h2> Sage XRT&#160;Advanced</h2><a class="cta" href="[%=General.CallToAction%]"><div class="center cta">Quoi de neuf&#160;?
+			</div></a>
+        </div>
+        <div class="search-container">
+            <MadCap:searchBarProxy data-mc-skin="/Project/Skins/SearchHome.flskn" />
+        </div>
+        <div id="contentBody" class="off-canvas-main">
+            <MadCap:bodyProxy />
+            <div class="info-container center">
+                <MadCap:snippetBlock src="../Snippets/GBL_Home.InfoSection.flsnp" />
+            </div>
+            <div class="footer center">
+                <div class="home-master-page-footer">
+                    <div>
+                        <p>
+                            <img src="../Images/Assets/Icons/SocialMedia/AddSM-gray.png" />
+                        </p>
+                        <p>FOLLOW&#160;US</p>
+                        <table style="width: 100%;">
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td><a href="[%=General.Facebook%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/FB-gray.png" /></a>
+                                    </td>
+                                    <td>
+                                        <p><a href="[%=General.Twitter%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Twitter-gray.png" /></a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><a href="[%=General.Instagram%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Insta-gray.png" /></a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><a href="[%=General.LinkedIn%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/LI-gray.png" /></a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p><a href="https://www.sage.com/fr-fr" target="_blank"><img src="../Images/Assets/PlaceholderLogo/Logo_55pxl.png" /></a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="../Images/Assets/Icons/MainIcons/Contact-gray.png" />
+                        </p>
+                        <p><MadCap:variable name="General.Email" />
+                        </p>
+                        <p><MadCap:variable name="General.PhoneNumber" />
+                        </p>
+                        <p><MadCap:variable name="General.StreetAddress" /> <MadCap:variable name="General.CityStateZip" /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
