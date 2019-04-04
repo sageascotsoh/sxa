@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="&gt; Sage XRT&#160;Treasury|[%=System.LinkedTitle%]|Gestion|Transactions de change|Création et modification|Swap" data-mc-conditions="Default.3Revised" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Swap terme contre terme</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Note.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Tableau standard.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="kanchor194"></a>Swap terme contre terme</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Créer une transaction de swap terme contre terme</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de gestion des transactions de swap terme contre terme, cliquez sur le bouton <b>Créer</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de création s'affiche.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Swap terme contre terme 2.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="846" data-mc-height="602" src="../../Resources/Images/L_FX/Swap terme contre terme 2_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">L'en-tête affiche les informations de base de la transaction.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2">Renseignez les champs de l'en-tête.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Dans le tableau suivant, les champs obligatoires sont indiqués dans la colonne intitulée O.</p>
+                                                    <p class="IndentPuceNiv1">Les champs non modifiables après l'enregistrement de la transaction sont indiqués dans la colonne intitulée M.</p>
+                                                    <p class="IndentPuceNiv1SautLigne"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau entete"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description de l'en-tête</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');display: none;" data-mc-target-name="Tableau entete">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Description</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">O</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">M</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Achat/Vente</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Définissez le sens de la transaction en activant la case d'option <b>Achat</b> ou la case d'option <b>Vente</b>.</p>
+                                                                    <p class="tableau"><b>Remarque&#160;:</b> Le sens choisi est celui de la transaction de change à terme du swap la plus éloignée dans le temps. Si vous activez la case d'option <b>Achat</b>, que le code USD (dollar américain) est indiqué en regard de la zone <b>Montant TRN terme</b> et GBP (livre Sterling) est indiqué en regard de la zone <b>Contre-valeur TRN terme</b>, la transaction créée est un swap avec achat à terme en dollars USD contre vente de devises GBP.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">TRN à terme&#160;1</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ vous permet de sélectionner un type de transaction pour la <b>jambe aller</b>, c'est-à-dire la <b>première transaction à terme</b>, en fonction du sens de transaction choisi.</p>
+                                                                    <p class="tableau">Cliquez sur le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" /> pour afficher la liste des types de transaction existant pour le sens de transaction choisi puis, dans la fenêtre contextuelle qui s'affiche, double-cliquez sur une ligne pour la sélectionner.</p>
+                                                                    <p class="tableau">Le code et la description du type de transaction sélectionné s'affichent dans le champ <b>Transaction</b>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">N°</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ, non modifiable, affiche l'identifiant de la jambe aller.</p>
+                                                                    <p class="tableau">Vous ne pouvez pas saisir d'informations dans ce champ.</p>
+                                                                    <p class="tableau">Il est à blanc lors de la création mais est automatiquement renseigné au moment de l'enregistrement de la transaction.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">TRN à terme&#160;2</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche le type de transaction pour la <b>jambe retour</b>, c'est-à-dire la <b>seconde transaction à terme</b>, en fonction du sens de transaction choisi.</p>
+                                                                    <p class="tableau">Par défaut, ce champ est alimenté avec le type de transaction complémentaire à celui sélectionné pour la jambe aller. Les couples de types de transactions de swap sont paramétrés via les types de transactions dans le module <span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span>. Pour plus d'informations sur ce paramétrage, consultez la documentation de ce module.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">N°</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ, non modifiable, affiche l'identifiant de la jambe retour.</p>
+                                                                    <p class="tableau">Vous ne pouvez pas saisir d'informations dans ce champ.</p>
+                                                                    <p class="tableau">Il est à blanc lors de la création mais est automatiquement renseigné au moment de l'enregistrement de la transaction.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">N° rattach.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">
+                                                                    <p class="tableau">Ce champ facultatif vous permet de regrouper des prévisions commerciales et des transactions de change sous un numéro de rattachement commun. Ce numéro vous permet de déterminer l'affectation des couvertures relevant d'un type d'activité, d'une zone géographique, d'un projet, etc. Il peut être utilisé ultérieurement comme critère de traitement comptable ou de filtre selon votre politique de couverture (micro ou macro-couverture). Pour plus d'informations sur les numéros de rattachement, consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span>.</p>
+                                                                    <p class="tableau">Pour sélectionner un numéro de rattachement, utilisez le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" /> comme expliqué précédemment.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1SautLigne">L'onglet <b>Caractéristiques</b> vous permet de définir les informations principales de la transaction à créer.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="3">Renseignez les champs de l'onglet.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Dans le tableau suivant, les champs obligatoires sont indiqués dans la colonne intitulée O.</p>
+                                                    <p class="IndentPuceNiv1">Les champs non modifiables après l'enregistrement de la transaction sont indiqués dans la colonne intitulée M.</p>
+                                                    <p class="IndentPuceNiv1SautLigne"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau onglet 1"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description des champs</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');display: none;" data-mc-target-name="Tableau onglet 1">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Description</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">O</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">M</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Zone <b>Analyses</b></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Dossier</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Sélectionnez un numéro de dossier en utilisant le bouton&#160;<img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />.</p>
+                                                                    <p class="tableau">Lorsque vous sélectionnez un numéro de dossier dans ce champ, la société, la contrepartie, la devise de contre-valeur de la jambe aller et la devise de contre-valeur de la jambe retour sont automatiquement renseignées à partir du dossier choisi.</p>
+                                                                    <p class="tableau">Pour plus d'informations sur la configuration des dossiers, consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Portefeuille</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Sélectionnez un numéro de portefeuille en utilisant le bouton&#160;<img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />.</p>
+                                                                    <p class="tableau">Pour plus d'informations sur les portefeuilles, consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Zone <b>Intervenants</b></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Société</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Ce champ vous permet de sélectionner la société donneuse d'ordre.<br />Pour sélectionner une société, utilisez le bouton&#160;<img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Contrepartie</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ vous permet de sélectionner la contrepartie avec laquelle la transaction a été conclue.<br />Pour sélectionner une contrepartie, utilisez le bouton&#160;<img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />.</p>
+                                                                    <p class="tableau">La contrepartie sélectionnée doit être une banque ou avoir un compte bancaire configuré pour la devise de la transaction. Pour plus d'informations sur la configuration des contreparties, consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Responsable</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Saisissez le nom du représentant de la contrepartie. Si un nom a été défini lors du paramétrage de la contrepartie, cette zone est automatiquement renseignée. Vous pouvez cependant modifier le nom qui sera repris dans le courrier confirmant la transaction.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">Zone <b>Général</b></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Mode Ctrv</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Sélectionnez une valeur dans la liste déroulante pour les valeurs à saisir et celles à calculer automatiquement parmi le montant des deux jambes dans la devise principale, les contre-valeurs et les cours de change. Selon l'option choisie, les champs suivants sont activés pour la saisie ou bien désactivés et automatiquement calculés et renseignés&#160;: le montant de chaque jambe dans la devise principale, le montant de leur contre-valeur et le cours au comptant.</p>
+                                                                    <ul style="list-style-type: square;">
+                                                                        <li value="1"><b>Saisir le cours</b>&#160;: cette option vous permet de saisir le montant de chaque jambe dans la devise principale et le cours de la devise. La contre-valeur est calculée automatiquement.</li>
+                                                                        <li value="2"><b>Saisir la contre-valeur</b>&#160;: cette option vous permet de saisir le montant de chaque jambe dans la devise principale et sa contre-valeur. Le cours de la devise est calculé automatiquement.</li>
+                                                                        <li value="3"><b>Saisir le cours et contre-valeur</b>&#160;: cette option vous permet de saisir le cours de la devise et la contre-valeur de chaque jambe. Le montant de chaque jambe est calculé automatiquement.</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Montant 1ère jambe</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Les deux champs affichent la devise principale et le montant de la première transaction à terme (jambe aller) exprimé dans la devise principale.</p>
+                                                                    <p class="tableau">Sélectionnez la devise principale en utilisant le bouton&#160;<img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />. Le code de la devise s'affiche dans le premier champ.</p>
+                                                                    <p class="tableau">Dans le champ de saisie situé après la devise, saisissez le montant de la première transaction à terme exprimé dans la devise principale ou calculez le montant en utilisant la calculatrice.<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> Pour plus d'informations sur l'utilisation de la calculatrice, <a href="ContextualTopics/Calculatrice.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</MadCap:conditionalText></p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">CTV&#160;1ère jambe</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Les deux champs affichent la devise de contre-valeur et le montant de la première transaction à terme (jambe aller) exprimé dans la devise de contre-valeur.</p>
+                                                                    <p class="tableau">La devise de contre-valeur est automatiquement renseignée avec la devise de la société donneuse d'ordre sélectionnée.</p>
+                                                                    <p class="tableau">Si ces champs sont activés, sélectionnez la devise de contre-valeur en utilisant le bouton&#160;<img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />. Le code de la devise s'affiche dans le premier champ.</p>
+                                                                    <p class="tableau">Dans le champ de saisie situé après la devise, saisissez le montant de la contre-valeur ou calculez le montant en utilisant la calculatrice.<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> Pour plus d'informations sur l'utilisation de la calculatrice, <a href="ContextualTopics/Calculatrice.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</MadCap:conditionalText></p>
+                                                                    <p class="tableau">La devise de contre-valeur proposée par défaut correspond à la monnaie locale de la société effectuant la transaction.</p>
+                                                                    <p class="tableau"><b>Important&#160;:</b> Vous pourrez modifier le montant de la contre-valeur par la suite, mais pas la devise de contre-valeur.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" /><span style="font-size: 8pt;"> (devise)</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Montant 2nde jambe</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Les deux champs affichent la devise principale et le montant de la seconde transaction à terme (jambe retour) exprimé dans la devise principale.</p>
+                                                                    <p class="tableau">Le montant et la devise sont renseignés par défaut avec les valeurs renseignées pour la jambe aller. Vous pouvez différencier les montants afin de couvrir les intérêts en même temps que le capital. Dans ce cas, vous pouvez soit inclure le montant des intérêts à la jambe retour, soit déduire le montant des intérêts de la jambe aller.</p>
+                                                                    <p class="tableau">Pour renseigner ce champ, procédez comme pour le champ <b>Montant 1ère jambe</b>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Contre-valeur 2nde jambe</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Les deux champs affichent la devise de contre-valeur et le montant de la seconde transaction à terme (jambe retour) exprimé dans la devise de contre-valeur.</p>
+                                                                    <p class="tableau">Le montant et la devise sont renseignés par défaut avec les valeurs renseignées pour la jambe aller. Pour renseigner ce champ, procédez comme pour le champ <b>CTV 1ère jambe</b>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/croix_14x14.gif" style="width: 14;height: 14;" /><span style="font-size: 8pt;"> (devise)</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date TRN</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche la date d'opération de la transaction de swap. Il est défini par défaut à la date du jour.</p>
+                                                                    <p class="tableau">Pour modifier cette date, saisissez une date dans le champ ou utilisez le calendrier.<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> Pour plus d'informations sur l'utilisation du calendrier, <a href="ContextualTopics/Calendrier.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</MadCap:conditionalText></p>
+                                                                    <p class="tableau">Dans la mesure où les mouvements de fonds n'ont pas lieu lors de la mise en place de la transaction de swap terme contre terme mais lors du dénouement, la date d'opération saisie dans le module <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span> n'est pas reprise dans le module <span style="font-weight: bold;" class="LocalizationSXT_Cash">Trésorerie</span>. Le module <span style="font-weight: bold;" class="LocalizationSXT_Cash">Trésorerie</span> prend comme dates des opérations bancaires des flux de trésorerie les dates d'échéance des deux jambes spécifiées dans le module <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span>.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date de valeur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche la date de valeur de la transaction de swap, calculée par rapport à la date de la transaction et en fonction du paramétrage du calendrier cambiste.</p>
+                                                                    <p class="tableau">Vous pouvez remplacer cette date par la date de l'opération ou par une date ultérieure.</p>
+                                                                    <p class="tableau">Pour modifier cette valeur, saisissez une date dans le champ ou utilisez le calendrier.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date d'échéance&#160;1</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ indique la date d'échéance de la jambe aller. Il s'agit de la date d'opération des flux postés dans la trésorerie <i style="font-style: normal;text-decoration: underline;">pour la jambe aller</i>.</p>
+                                                                    <p class="tableau">Ce champ n'est pas modifiable. Cette date est calculée à partir de la date de livraison de la jambe aller (champ <b>Date de livraison&#160;1</b>) et est antérieure de deux jours ouvrés à cette dernière (ou plus, si le marché d'une des deux devises de la transaction était fermé deux jours ouvrés auparavant).</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date de livraison&#160;1</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche la date à laquelle les devises sont effectivement livrées <u>pour la jambe aller</u>. Il s'agit de la date de valeur des flux postés dans la trésorerie pour la première transaction de change à terme. Cette date est positionnée par défaut à la date de valeur de la transaction de swap plus deux jours ouvrés en tenant compte du calendrier cambiste rattaché aux deux devises. Pour plus d'informations sur le paramétrage des calendriers cambistes, consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>.</p>
+                                                                    <p class="tableau">Cette date peut être remplacée par une date identique ou ultérieure à la date de la transaction.</p>
+                                                                    <p class="tableau">Pour modifier cette valeur, saisissez une date dans le champ ou utilisez le calendrier.</p>
+                                                                    <p class="tableau">Vous ne pouvez pas sélectionner de date antérieure à deux jours ouvrés après la date de valeur de la transaction de swap.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date d'échéance&#160;2</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ indique la date d'échéance de la jambe retour. Il s'agit de la date d'opération des flux postés dans la trésorerie <i style="font-style: normal;text-decoration: underline;">pour la jambe retour</i>.</p>
+                                                                    <p class="tableau">Ce champ n'est pas modifiable. Cette date est calculée à partir de la date de livraison de la jambe retour (champ <b>Date de livraison&#160;2</b>) et est antérieure de deux jours ouvrés à cette dernière (ou plus, si le marché d'une des deux devises de la transaction était fermé deux jours ouvrés auparavant).</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date de livraison&#160;2</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche la date à laquelle les devises sont effectivement livrées <u>pour la jambe retour</u>. Il s'agit de la date de valeur des flux postés dans la trésorerie pour la seconde transaction de change à terme. Cette date est positionnée par défaut à la date de valeur de la transaction de swap plus deux jours ouvrés en tenant compte du calendrier cambiste rattaché aux deux devises. Pour plus d'informations sur le paramétrage des calendriers cambistes, consultez la documentation du module <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>.</p>
+                                                                    <p class="tableau">Cette date peut être remplacée par une date identique ou ultérieure à la date de la transaction.</p>
+                                                                    <p class="tableau">Pour modifier cette valeur, saisissez une date dans le champ ou utilisez le calendrier.</p>
+                                                                    <p class="tableau">Vous ne pouvez pas sélectionner de date antérieure à deux jours ouvrés après la date de valeur de la transaction de swap.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="4">
+                                                                    <p colspan="4" class="tableau">Zone <b>Cours</b></p>
+                                                                    <p colspan="4" class="tableau" style="font-style: normal;">Cette zone affiche la valeur du cours de change au comptant, des points de terme et du cours de change à terme.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Au comptant</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche le cours de change au comptant des devises pour la jambe aller et pour la jambe retour de la transaction de swap.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Points de terme</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Ce champ affiche la différence en points entre le cours de change à terme et le cours de change au comptant de chaque jambe de la transaction de swap.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Cours à terme</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">Ce champ affiche le cours de change à terme des devises pour la jambe aller et pour la jambe retour de la transaction de swap.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">&#160;</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1SautLigne">Dans la zone <b>Cours</b>, les valeurs sont à saisir ou automatiquement renseignées en fonction de l'option de saisie choisie dans la liste déroulante <b>Mode ctrv</b>&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">Si vous avez choisi l'option <b>Saisir le cours</b> ou l'option <b>Saisir le cours et la contre-valeur</b>, les cours de change au comptant, les points de terme et les cours de change à terme sont alimentés à partir des cours configurés dans le module <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>. Pour plus d'informations sur la configuration des cours des devises, consultez la documentation <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv2">Vous pouvez au besoin modifier l'une des valeurs renseignées. Les autres valeurs sont alors recalculées automatiquement&#160;: si vous modifiez les points de terme, les cours de change à terme sont recalculés&#160;; si vous modifiez les cours de change au comptant ou les cours de change à terme, les points de terme sont recalculés.</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">Si vous avez choisi l'option <b>Saisir la contre-valeur</b>, les valeurs sont calculées à partir du montant en devise principale et du montant en devise de contre-valeur.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1SautLigne">Cliquez sur le bouton <img src="../../Resources/Images/L_FX/Bouton cours inverse.png" /> pour changer le sens d'expression du cours des valeurs de la zone <b>Cours</b> (cours de change au comptant, points de terme, cours de change à terme). Les valeurs affichées correspondent alors au sens devise de contre-valeur contre devise principale, mais le sens de la transaction ne change pas.</p>
+                                                    <p class="IndentPuceNiv1">Cliquez à nouveau sur le bouton <img src="../../Resources/Images/L_FX/Bouton cours inverse.png" /> pour réafficher les valeurs dans le sens de la transaction.</p>
+                                                    <ol start="4">
+                                                        <li class="PuceNumNiv1" value="4">Cliquez sur l'onglet <b>Cours croisé</b>.</li>
+                                                    </ol>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Swap terme contre terme 3.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="745" data-mc-height="451" src="../../Resources/Images/L_FX/Swap terme contre terme 3_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cet onglet vous permet de définir les différents cours croisés de terme lorsqu'aucune des devises de la transaction de swap ne correspond à la monnaie locale de la société. Il comporte les cours de deux devises par rapport à la monnaie locale de la société et aux dates des deux jambes (les deux transactions de change à terme).</p>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Exemple</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p class="IndentPuceNiv1">Votre société utilise l'euro en tant que monnaie locale et vous réalisez une transaction en dollars contre des livres Sterling.</p>
+                                                            <ul>
+                                                                <li class="PuceNiv2" value="1">Le cours dollar-livre (ou son inverse) est renseigné dans l'onglet <b>Caractéristiques</b>.</li>
+                                                                <li class="PuceNiv2" value="2">Les cours dollar-euro et euro-livre (ou leur inverse) sont précisés dans l'onglet <b>Cours croisé</b>.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p class="IndentPuceNiv1SautLigne">La définition de ces cours contre monnaie locale est utilisée, entre autres, pour effectuer les calculs en monnaie locale. Ces calculs sont nécessaires dans les positions ou les résultats&#160;: cours moyen, réévaluation, point mort, résultats, etc.</p>
+                                                    <p class="IndentPuceNiv1">Ces cours sont calculés à partir de trois éléments&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">les cours de change de l'onglet <b>Caractéristiques</b>,</li>
+                                                        <li class="PuceNiv2" value="2">les cours de change paramétrés dans le module <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>.</li>
+                                                        <li class="PuceNiv2" value="3">les taux d'intérêts paramétrés dans le module <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1SautLigne">Les principes de calcul des cours croisés sont analogues à ceux du change au comptant.</p>
+                                                    <p class="IndentPuceNiv1">Le tableau ci-après décrit les champs de l'onglet. Chacune des deux zones de l'onglet (<b>Cours croisé&#160;1</b> et <b>Cours croisé&#160;2</b>) vous permet de renseigner les informations d'un cours de change d'une devises de la transaction par rapport à la devise locale de la société. Les champs de cet onglet sont identiques dans les deux zones.</p>
+                                                    <p class="IndentPuceNiv1">Deux colonnes affichent les cours croisés des devises&#160;: la première affiche les informations relatives à la jambe aller (première transaction de change à terme) et la seconde affiche les informations relatives à la jambe retour (seconde transaction de change à terme).</p>
+                                                    <p class="IndentPuceNiv1SautLigne" data-mc-conditions=""><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau onglet cours croise"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description des champs</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');display: none;" data-mc-target-name="Tableau onglet cours croise">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Au comptant</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Les champs affichent, pour chacune des deux jambes de la transaction de swap, les devises du couple et la valeur du cours de change au comptant du couple de devises dans le sens indiqué.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Points de terme</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Ce champ affiche, pour chacune des deux jambes de la transaction de swap, la différence en points entre le cours de change à terme et le cours de change au comptant.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Cours à terme</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">Ce champ affiche, pour chacune des deux jambes de la transaction de swap, le cours de change à terme du couple de devises dans le sens indiqué.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol start="5">
+                                                        <li class="PuceNumNiv1" value="5">Pour modifier les valeurs de cet onglet, saisissez une valeur dans le champ voulu ou calculez la valeur en utilisant la calculatrice.<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> Pour plus d'informations sur l'utilisation de la calculatrice, <a href="ContextualTopics/Calculatrice.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</MadCap:conditionalText></li>
+                                                        <li class="PuceNumNiv1" value="6">Placez le curseur dans un autre champ. Les autres valeurs sont mises à jour automatiquement&#160;: si vous modifiez les points de terme, le cours de change à terme est recalculé&#160;; si vous modifiez le cours de change au comptant ou le cours de change à terme, les points de terme sont recalculés.</li>
+                                                    </ol>
+                                                    <ol start="3" data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="7">Cliquez sur le bouton <img src="../../Resources/Images/L_FX/Bouton cours inverse.png" /> si vous souhaitez changer le sens de cotation, comme expliqué précédemment.</li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="8">Cliquez sur l'onglet <b>Dénouement jambe à terme&#160;1</b>.</li>
+                                                    </ol>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Swap terme contre terme 4.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="746" data-mc-height="603" src="../../Resources/Images/L_FX/Swap terme contre terme 4_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cet onglet vous permet de définir les informations relatives aux instructions de paiement <b>pour la jambe aller (première transaction à terme)</b>&#160;: coordonnées bancaires nécessaires aux mouvements de fonds et dates de livraison.</p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" style="width: 31px;" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">Cet onglet ne permet pas de dénouer la transaction, mais de renseigner des informations liées au dénouement. Pour plus d'informations sur le dénouement, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="TRAITFINAN - Denouement.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Dénouement</a>.</MadCap:conditionalText></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1SautLigne">Pour la première comme pour la seconde jambe des transactions de swap terme contre terme, les coordonnées bancaires ne sont pas obligatoirement saisies dès la création de la transaction. Il s'agit là d'une Il s'agit là d'une préférence paramétrée dans la configuration FX. Pour plus d'informations, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="PARAM - Configuration FX.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Configuration FX</a>.</MadCap:conditionalText> Ce n'est que lorsque la transaction est dénouée que cette information devient indispensable.</p>
+                                                    <p class="IndentPuceNiv1">Cet onglet est identique à l'onglet <b>Dénouement</b> de la page de création de transactions de change au comptant, excepté qu'il comprend un champ supplémentaire (décrit ci-après) dédié au statut de la transaction et que la date de valeur de la transaction est alimentée avec la date de livraison de la jambe aller (champ <b>Date d'échéance&#160;1</b> dans l'onglet <b>Caractéristiques</b>).</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">La zone <b>Devise principale</b> vous permet de sélectionner les comptes de la devise principale <b>à créditer dans le cas d'un achat ou à débiter dans le cas d'une vente</b>.</li>
+                                                        <li class="PuceNiv2" value="2">La zone <b>Devise de contre-valeur</b> vous permet de sélectionner les comptes de la devise de contre-valeur <b>à débiter dans le cas d'un achat ou à créditer dans le cas d'une vente</b>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1">Dans le tableau suivant, les champs obligatoires sont indiqués dans la colonne intitulée O.
+</p>
+                                                    <p class="IndentPuceNiv1SautLigne"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="capture onglet Dénouement"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description des champs</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');display: none;" data-mc-target-name="capture onglet Dénouement">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1" data-mc-conditions="">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Description</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">O</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Compte société</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">En utilisant le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />, sélectionnez le compte bancaire de la société à débiter ou à créditer selon le cas.</p>
+                                                                    <p class="tableau">Ce compte de dénouement peut être libellé dans une devise tierce, différente de la devise principale ou secondaire.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date de valeur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ modifiable affiche la date à laquelle les devises seront effectivement disponibles sur le compte considéré. Pour la jambe aller (première transaction de change à terme), il correspond à la date de livraison de la jambe aller (champ <b>Date livraison&#160;1</b> dans l'onglet <b>Caractéristiques</b>).</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Compte contrepartie</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ces champs affichent le détail du compte bancaire de contrepartie, qui sont automatiquement renseignés, le cas échéant, à partir du compte de contrepartie configuré pour la société sélectionnée et la devise de la transaction.</p>
+                                                                    <p class="tableau">Le compte de contrepartie est facultatif si la contrepartie est une banque. Lorsqu'il s'agit d'une autre contrepartie ou d'une société, le compte bancaire doit obligatoirement être configuré pour la contrepartie et la devise de la transaction. En effet, les transactions au comptant sont automatiquement dénouées par le module <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span> dès leur validation, d'où la nécessité de l'existence de cette information lors de la création de la transaction.</p>
+                                                                    <p class="tableau">La configuration des comptes de contrepartie est effectuée via le module <span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span>. Consultez la documentation de ce module pour plus d'informations.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">De /&#160;Par</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Ce champ affiche le correspondant par défaut défini pour le compte bancaire sélectionné.</p>
+                                                                    <p class="tableau">Si aucun correspondant par défaut n'a été défini ou si le correspondant pour cette transaction n'est pas le correspondant par défaut, vous pouvez saisir ou modifier le nom d'un correspondant dans ce champ.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Conversion</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Cette fonction vous permet de consulter le détail de la conversion de valeurs si la devise du compte crédité diffère de la devise principale de la transaction ou si la devise du compte débité diffère de la devise secondaire de la transaction.</p>
+                                                                    <p class="tableau">Pour plus d'informations sur cette fonction, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="TRAITFINAN - Conversion des montants.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Conversion des montants</a>.</MadCap:conditionalText></p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Référence</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Saisissez dans ce champ une référence externe pour la transaction de swap, le cas échéant. Il peut s'agir par exemple de la référence du système interne de classement de votre organisation&#160;: cette référence est reprise dans les courriers rattachés à la transaction. Elle constitue également un critère de recherche et de sélection.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1" data-mc-conditions="">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Statut</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">Ce champ non modifiable affiche l'état de la transaction&#160;: ouverte ou fermée (dénouée).</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1SautLigne">En effet, après sa création, le contrat reste ouvert jusqu'à son dénouement. Une fois le contrat dénoué, vous ne pouvez plus le modifier, mais uniquement le consulter. Il disparaît également de la position financière pour intégrer le stock, puis, plus tard, le solde.</p>
+                                                    <ol start="9">
+                                                        <li class="PuceNumNiv1" value="9">Cliquez sur l'onglet <b>Dénouement jambe à terme&#160;2</b>.</li>
+                                                    </ol>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Swap terme contre terme 5.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="746" data-mc-height="538" src="../../Resources/Images/L_FX/Swap terme contre terme 5_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cet onglet vous permet de définir les informations relatives aux instructions de paiement <b>pour la jambe retour (seconde transaction à terme)</b>&#160;: coordonnées bancaires nécessaires aux mouvements de fonds et dates de livraison.</p>
+                                                    <p class="IndentPuceNiv1">Cet onglet fonctionne comme le précédent, excepté&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">que la date de valeur de la transaction est alimentée avec la date de livraison de la jambe retour (champ <b>Date livraison&#160;2</b> dans l'onglet <b>Caractéristiques</b>),</li>
+                                                        <li class="PuceNiv2" value="2">qu'il ne comporte pas de champ <b>Référence</b> (il existe un numéro de référence unique pour la transaction de swap, qui est renseigné dans l'onglet précédent).</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1">Les comptes bancaires sélectionnés dans cet onglet pour le dénouement de la jambe retour sont automatiquement alimentés à partir de ceux renseignés dans l'onglet précédent. Vous pouvez modifier ces informations.</p>
+                                                    <ol start="10">
+                                                        <li class="PuceNumNiv1" value="10" data-mc-conditions="">Cliquez sur l'onglet <b>Back Office</b>.</li>
+                                                    </ol>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Swap terme contre terme 6.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="759" data-mc-height="485" src="../../Resources/Images/L_FX/Swap terme contre terme 6_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1SautLigne">Cet onglet présente les informations réservées au suivi administratif et à la sécurité de la transaction, indispensables à la gestion de trésorerie internationale. Il affiche l'historique des événements au niveau de la transaction&#160;: création, dernière modification, validation <i>back&#160;office</i>, éditions générées.</p>
+                                                    <p class="IndentPuceNiv1">Dans cet onglet, vous pouvez procéder à la validation <i>back&#160;office</i> de la transaction.</p>
+                                                    <p class="IndentPuceNiv1">Cet onglet est identique à l'onglet <b>Back Office </b>de la page de création de transaction de change au comptant.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Dans le tableau suivant, les champs modifiables sont indiqués dans la colonne intitulée M.</p>
+                                                    <p class="IndentPuceNiv1SautLigne"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Capture onglet BO"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description des champs</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');display: none;" data-mc-target-name="Capture onglet BO">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Description</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">M</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="3">
+                                                                    <p colspan="3" class="tableau">Zone <b>Création</b></p>
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;"><span style="font-weight: normal;">Cette zone affiche des informations sur la création de la transaction.</span>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Date de création de la transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">A</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Heure de création de la transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Par</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Nom d'utilisateur et nom complet de l'utilisateur à l'origine de la création</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="3">
+                                                                    <p colspan="3" class="tableau">Zone <b>Dernière modification</b></p>
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;"><span style="font-weight: normal;">Cette zone affiche des informations sur la dernière modification de la transaction.</span>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Date de la dernière modification de la transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">A</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Heure de la dernière modification de la transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Par</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Nom d'utilisateur et nom complet de l'utilisateur à l'origine de la dernière modification</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="3">
+                                                                    <p colspan="3" class="tableau">Zone <b>Validation</b></p>
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;"><span style="font-weight: normal;">Cette zone affiche des informations sur la validation </span>back&#160;office <span style="font-weight: normal;">de la transaction.</span></p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Validation BO</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">
+                                                                    <p class="tableau">Cette case à cocher est activée si la transaction a été validée en <i>back&#160;office</i>. Vous ne pouvez pas annuler la validation <i>back&#160;office</i> de cette transaction dans cette page. Pour plus d'informations sur l'annulation de la validation <i>back&#160;office</i>, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="TRAITFINAN - Annulation BO.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Annulation de la validation Back&#160;Office</a>.</MadCap:conditionalText></p>
+                                                                    <p class="tableau">Si vous souhaitez procéder à la validation <i>back&#160;office</i> de la transaction à partir de cette page, activez cette case à cocher. La transaction est alors validée&#160;et un ticket d'opération, une lettre de confirmation et un ordre de paiement sont édités.</p>
+                                                                    <p class="tableau">Tant qu'une transaction est validée en <i>back office</i>, elle ne peut pas être supprimée.</p>
+                                                                </td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Date de validation <i>back&#160;office</i> de la transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">A</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Heure de validation <i>back&#160;office</i> de la transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Par</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Nom d'utilisateur et nom complet de l'utilisateur à l'origine de la validation <i>back&#160;office</i></td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="3">
+                                                                    <p colspan="3" class="tableau">Zone <b>Editions</b></p>
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;"><span style="font-weight: normal;">Cette zone affiche des informations sur les documents générés à partir de la transaction.</span>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Ticket d'opération</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Cette case à cocher est activée si un ticket d'opération a déjà été généré pour cette transaction.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Lettre de confirmation</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Cette case à cocher est activée si une lettre de confirmation a déjà été générée pour cette transaction.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Ordre de paiement</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Cette case à cocher est activée si un ordre de paiement a déjà été généré pour cette transaction.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">&#160;</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column1-Body1" colspan="3">
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;"><i>Zone <b>Affectation comptable</b></i>
+                                                                    </p>
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;font-weight: normal;">Cette zone vous permet de renseigner des informations comptables sur la transaction qui seront exportées à destination d'un système externe de comptabilité.</p>
+                                                                    <p colspan="3" class="tableau" style="font-style: normal;"><span style="font-weight: normal;">Consultez la documentation du module </span><span style="font-weight: bold;" class="LocalizationSXT_Setup">Paramétrage</span><span style="font-weight: normal;"> pour plus d'informations sur la configuration des catégories, natures et périodes comptables.</span>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Catégorie</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Ce champ vous permet d'associer une catégorie comptable à la transaction. Utilisez le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" /> comme décrit précédemment.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Type</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Ce champ vous permet d'associer une nature comptable à la transaction en utilisant le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Période</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">Ce champ vous permet d'associer une catégorie comptable à la transaction en utilisant le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" style="width: 16px;height: 16px;" />.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">
+                                                                    <img src="../../Resources/Images/L_FX/Checkmark_L_23x19.gif" style="width: 23;height: 19;" />
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="11">Cliquez sur l'onglet <b>Zones utilisateur</b>.</li>
+                                                    </ol>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Swap terme contre terme 7.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="746" data-mc-height="280" src="../../Resources/Images/L_FX/Swap terme contre terme 7_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cet onglet vous permet de définir, sous forme de texte libre, des renseignements complémentaires sur la transaction.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="12">Dans le premier champ de saisie, saisissez les commentaires que vous souhaitez inclure dans le journal.</li>
+                                                        <li class="PuceNumNiv1" value="13">Dans le deuxième champ, saisissez les commentaires que vous souhaitez inclure dans le ticket d'opération.</li>
+                                                        <li class="PuceNumNiv1" value="14">Cliquez sur le bouton <b>OK</b> pour valider la création de la transaction sur le bouton <b>Annuler</b> pour annuler l'opération.</li>
+                                                    </ol>
+                                                    <p>Quatre flux sont générés dans la trésorerie&#160;: un flux de recette en devise principale et un flux de dépense en devise de contre-valeur pour chacune des deux jambes du swap.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="dupliquer_swp_trmtrm"></a><a name="kanchor195"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Dupliquer une transaction de swap terme contre terme</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de gestion des transactions de swap terme contre terme, activez la case à cocher correspondant à la transaction à dupliquer, puis cliquez sur le bouton <b>Dupliquer</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de duplication de transaction s'affiche.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/dupliquer swap trm trm.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="455" data-mc-height="393" src="../../Resources/Images/L_FX/dupliquer swap trm trm_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Le champ&#160;<b>Numéro</b> affiche le numéro de la transaction d'origine. Le numéro de la nouvelle transaction, non affiché, sera généré par incrémentation automatique.</p>
+                                                    <p class="IndentPuceNiv1">Le champ <b>Trn terme&#160;1</b> affiche le type de transaction de la jambe aller et le champ <b>Trn terme 2</b> affiche celui de la jambe retour.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2">Si vous souhaitez modifier le type de transaction de l'une des deux jambes&#160;:</li>
+                                                    </ol>
+                                                    <ol>
+                                                        <li class="PuceNumNiv2" value="1">Cliquez sur le bouton <img src="../../Resources/Images/L_FX/Bouton Points de suspension.JPG" /> en regard du champ <b>Trn au comptant</b> ou <b>Trn à terme</b> (en fonction de la jambe à modifier).</li>
+                                                        <li class="PuceNumNiv2" value="2">Dans la fenêtre contextuelle qui s'affiche, cliquez sur le bouton <img src="../../Resources/Images/L_FX/bouton liste.png" /> pour afficher tous les types de transaction disponibles.</li>
+                                                        <li class="PuceNumNiv2" value="3">Dans la liste des types de transaction, double-cliquez sur une ligne pour la sélectionner.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv2">Le code et le libellé du type de transaction sélectionné s'affichent dans le champ.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Le champ <b>Société </b>affiche le code et le libellé de la société donneuse d'ordre. Ce champ n'est pas modifiable.</p>
+                                                    <ol start="3">
+                                                        <li class="PuceNumNiv1" value="3">Dans la zone<b> Type de duplication</b>, activez la case d'option&#160;:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1"><b>Caractéristiques initiales</b> pour dupliquer à l'identique toutes les autres informations de la transaction d'origine, y compris les dates et les cours de change,</li>
+                                                        <li class="PuceNiv2" value="2"><b>Caractéristiques initiales avec mise à jour des dates et des cours</b>, pour dupliquer les autres informations de la transaction, excepté les dates et les cours de change, automatiquement alimentés comme suit.</li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="PuceNiv3" value="1">La date d'opération est positionnée à la date du jour.</li>
+                                                        <li class="PuceNiv3" value="2">La date de valeur au comptant et les dates d'échéance des deux jambes sont positionnées à la date du jour plus deux jours ouvrés en fonction du calendrier cambiste.</li>
+                                                        <li class="PuceNiv3" value="3">Les dates de livraison des deux jambes sont positionnées à la date d'échéance plus deux jours ouvrés.</li>
+                                                        <li class="PuceNiv3" value="4">Les cours de change sont définis à partir du cours marché vendeur ou acheteur configuré dans le module <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>. Pour plus d'informations sur la configuration des cours marché, consultez la documentation <span style="font-weight: bold;" class="LocalizationSXT_MarketData">Données de Marché</span>.</li>
+                                                    </ul>
+                                                    <ol start="4">
+                                                        <li class="PuceNumNiv1" value="4">Cliquez sur le bouton <b>OK</b> pour valider la duplication ou sur le bouton <b>Annuler</b> dans la barre d'actions pour annuler.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de gestion des transactions de swap terme contre terme est réaffichée et actualisée avec la transaction dupliquée.</p>
+                                                    <p class="IndentPuceNiv1">Vous pouvez ensuite modifier les différentes caractéristiques de la transaction avant sa validation <i>back office</i>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

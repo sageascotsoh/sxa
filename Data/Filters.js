@@ -1,0 +1,1 @@
+define({'Vidéos':{c:'Video', cm:'', o:2},'Aide XRT Advanced':{c:'', cm:'', o:0},'Aide XRT Treasury':{c:'', cm:'', o:1},'Nouvelles Fonctions':{c:'New Features', cm:'', o:3},})

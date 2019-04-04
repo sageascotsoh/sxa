@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName">SAGE</Variable>
+  <Variable
+    Name="ModuleTreso"
+    Comment=""
+    Definition="Some text">Trésorerie</Variable>
+  <Variable
+    Name="DocTitle"
+    Comment=""
+    Definition="Some text">Online Help</Variable>
+  <Variable
+    Name="ApplicationVersionNo."
+    Comment=""
+    Definition="Some text"></Variable>
+  <Variable
+    Name="DocYear"
+    Comment=""
+    Definition="Some text">2015</Variable>
+  <Variable
+    Name="EBPortalName"
+    Comment=""
+    Definition="Some text">Online Banking</Variable>
+  <Variable
+    Name="EBSuiteName"
+    Comment="">Sage XRT Business Exchange</Variable>
+  <Variable
+    Name="CashProductName"
+    Comment="">Sage XRT Treasury</Variable>
+  <Variable
+    Name="CashShortName"
+    Comment="">SXT</Variable>
+  <Variable
+    Name="EBShortName"
+    Comment="">SXBE</Variable>
+  <Variable
+    Name="EBAdminApp"
+    Comment="">Administration Sage XRT Business Exchange</Variable>
+  <Variable
+    Name="ModuleParam"
+    Comment="">Paramétrage</Variable>
+  <Variable
+    Name="SXComm"
+    Comment="">Sage XRT Communication</Variable>
+  <Variable
+    Name="SXSign"
+    Comment="">Sage XRT Signature</Variable>
+  <Variable
+    Name="SXCS"
+    Comment="">Sage XRT Communication &amp; Signature</Variable>
+  <Variable
+    Name="ModuleFX"
+    Comment="">FX</Variable>
+  <Variable
+    Name="ModuleNett"
+    Comment="">Netting</Variable>
+</CatapultVariableSet>

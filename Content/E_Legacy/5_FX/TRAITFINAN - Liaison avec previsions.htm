@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="&gt; Sage XRT&#160;Treasury|[%=System.LinkedTitle%]|Gestion|Transactions de change" data-mc-conditions="Default.3Revised" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Liaison avec les prévisions commerciales</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Warning.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Note.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="top"></a><a name="kanchor280"></a>Liaison avec les prévisions commerciales</h1>
+                                            <p>Vous pouvez lier une transaction de change à terme sec ou une jambe à terme de swap avec les prévisions commerciales préalablement enregistrées.</p>
+                                            <p>Cette opération n'est pas obligatoire mais elle vous permet de suivre la couverture de votre risque de change.</p>
+                                            <p>Chaque transaction de couverture (change) peut être liée à une ou plusieurs opérations commerciales et vice versa. De cette façon, vous pouvez vérifier que la politique de couverture suit bien les règles de gestion des opérations commerciales de votre société (par exemple, couvrir 100% des risques).</p>
+                                            <p>Les transactions de couverture sont les transactions de change à terme sec et les jambes à terme des swaps de change.</p>
+                                            <p>Vous pouvez lier une transaction de change à des opérations commerciales une fois la création de la transaction de change validée. Cette opération n'est pas possible au moment de la création de la transaction de change.</p>
+                                            <table style="mc-table-style: url('../../Resources/TableStyles/Warning.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Warning" cellspacing="0">
+                                                <col class="TableStyle-Warning-Column-Column1" style="width: 31px;" />
+                                                <col class="TableStyle-Warning-Column-Column2" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Warning-Body-Body1">
+                                                        <td class="TableStyle-Warning-BodyB-Column1-Body1">
+                                                            <img src="../../Resources/Images/Assets/oh-Warning.png" />
+                                                        </td>
+                                                        <td class="TableStyle-Warning-BodyA-Column2-Body1"> Lorsque vous associez une opération commerciale à une transaction de change, vous ne pouvez plus diminuer ni le montant de la transaction de change ni celui de l'opération commerciale.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Lier une transaction à des prévisions commerciales</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de gestion des transactions de change à terme, double-cliquez sur une ligne du tableau pour modifier la transaction correspondante.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">-&#160;OU&#160;-</p>
+                                                    <p class="IndentPuceNiv1">Dans la page de gestion des transactions de swap comptant contre terme ou terme contre terme, double-cliquez sur une ligne du tableau correspondant à une jambe à terme de swap pour la modifier.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">La page de modification de la transaction s'affiche.</p>
+                                                    <p data-mc-target-name="Capture selection prev comm"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Selectionner TRN comm 1.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="762" data-mc-height="653" src="../../Resources/Images/L_FX/Selectionner TRN comm 1_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2">Cliquez sur le bouton <b>Sélectionner transactions commerciales</b> situé en bas de la page.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de sélection des prévisions commerciales s'affiche.</p>
+                                                    <p data-mc-target-name="Capture selection trn comm"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Selectionner TRN comm 2.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="702" data-mc-height="338" src="../../Resources/Images/L_FX/Selectionner TRN comm 2_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cette page affiche la liste de prévisions commerciales que vous pouvez associer à la transaction de change en cours.</p>
+                                                    <p class="IndentPuceNiv1">Les prévisions commerciales affichées sont celles dont le sens de la transaction (achat ou vente), la société, les devises et le mois de livraison correspondent à la transaction de change en cours et ayant le statut «&#160;ouverte&#160;». Les opérations commerciales déjà liées à une transaction de change sont affichées si leur montant non couvert est non nul.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">En haut à droite de la page est affiché un compteur de montants qui affiche la différence entre le montant de la transaction de change et le total des prévisions commerciales sélectionnées pour la liaison.</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">Le premier champ <b>Total TRN</b> affiche le montant de la transaction de change dans la devise de la transaction.</li>
+                                                        <li class="PuceNiv2" value="2">Le second champ <b>Total TRN</b> affiche le montant total des prévisions commerciales sélectionnées. Tant qu'aucune prévision commerciale n'est associée à la transaction de change, ce montant est nul.</li>
+                                                        <li class="PuceNiv2" value="3">Le champ <b>Ecart</b> affiche le montant de l'écart entre la transaction de change et les prévisions commerciales sélectionnées. Tant qu'aucune prévision commerciale n'est associée à la transaction de change, ce montant est égal au montant de la transaction de change. Une fois que vous avez associé toutes les prévisions commerciales concernées, ce montant doit être nul.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1SautLigne">Le tableau situé en dessous affiche la liste de prévisions commerciales pouvant être sélectionnées avec leurs caractéristiques, notamment le sens de la prévision (dépense ou recette), l'identifiant, les dates de transaction et de livraison, la société, la devise et le montant.</p>
+                                                    <ol start="3">
+                                                        <li class="PuceNumNiv1" value="3">Double-cliquez sur une ligne du tableau pour sélectionner la prévision commerciale correspondante.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Le compteur des montants est mis à jour avec la sélection.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="4">Si nécessaire, sélectionnez d'autres prévisions commerciales.</li>
+                                                        <li class="PuceNumNiv1" value="5">Si le tableau n'affiche pas toutes les prévisions commerciales nécessaires ou s'il affiche trop de prévisions commerciales, vous pouvez étendre ou élaguer la liste affichée en modifiant la plage de dates des prévisions commerciales, comme suit.</li>
+                                                    </ol>
+                                                    <ol>
+                                                        <li class="PuceNumNiv2" value="1">Cliquez sur le bouton <b>Etendre/Restreindre la sélection</b> en bas de la page.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv2">La page de modification des critères de sélection s'affiche.</p>
+                                                    <p data-mc-target-name="Capture filtre 1"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Selectionner TRN comm 3.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="500" data-mc-height="294" src="../../Resources/Images/L_FX/Selectionner TRN comm 3_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv2" value="2">Si vous souhaitez annuler le filtrage sur les dates des prévisions commerciales, désactivez la case à cocher <b>Date Livraison</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv2">Si vous souhaitez étendre ou restreindre la période de filtrage&#160;:</p>
+                                                    <ol>
+                                                        <li class="PuceNumNiv3" value="1">Activez la case à cocher <b>Date livraison</b>.</li>
+                                                        <li class="PuceNumNiv3" value="2">Dans les champs&#160;<b>De</b> et <b>A</b>, définissez les dates de début et de fin de la période dans laquelle doit se situer la date des prévisions commerciales à afficher.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv3">Pour cela, dans le champ de saisie, sélectionnez la valeur à modifier et saisissez une date au clavier au format jj/mm/aaaa.</p>
+                                                    <p class="IndentPuceNiv3">- Ou&#160;-</p>
+                                                    <p class="IndentPuceNiv3">Cliquez sur le bouton <img src="../../Resources/Images/L_FX/bouton appel calendrier 2_12x15.png" style="width: 12;height: 15;" /> pour utiliser le calendrier.</p>
+                                                    <p class="IndentPuceNiv3">Une page de sélection de date s'affiche.</p>
+                                                    <p class="IndentPuceNiv3"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Selectionner TRN comm 4.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="534" data-mc-height="489" src="../../Resources/Images/L_FX/Selectionner TRN comm 4_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv3">Dans le champ en regard de la case d'option <b>Date fixe</b> (qui est activée), cliquez sur le bouton <img src="../../Resources/Images/L_FX/Bouton fleche bas.jpg" /> pour afficher le calendrier.</p>
+                                                    <p class="IndentPuceNiv3">Le calendrier s'affiche dans une fenêtre contextuelle.</p>
+                                                    <p class="IndentPuceNiv3SautLigne"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerIndentPuceNiv3SautLigne MCTogglerHotSpot_ MCTogglerHotSpot_IndentPuceNiv3SautLigne MCHotSpotImage" data-mc-targets="Capture calendrier"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher le calendrier</a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv3" style="display: none;" data-mc-target-name="Capture calendrier"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Pop-up calendrier.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="169" data-mc-height="163" src="../../Resources/Images/L_FX/Pop-up calendrier_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv3SautLigne">Utilisez les flèches <img src="../../Resources/Images/L_FX/Bouton calendrier fleche droite.jpg" style="width: 8px;height: 12px;" /> et <img src="../../Resources/Images/L_FX/Bouton calendrier fleche gauche.jpg" /> pour sélectionner un mois et une année, puis cliquez sur un jour dans le calendrier.</p>
+                                                    <p class="IndentPuceNiv3">-&#160;ou&#160;-</p>
+                                                    <p class="IndentPuceNiv3">Pour positionner la date à la date du jour, cliquez sur le bouton <b>Aujourd'hui</b>.</p>
+                                                    <p class="IndentPuceNiv3">Dans la page de sélection de date, cliquez sur le bouton <b>OK</b> en haut de page pour valider la date.</p>
+                                                    <p class="IndentPuceNiv3">Dans la page de modification de critères de sélection, cliquez sur <b>OK</b> pour valider la plage de dates.</p>
+                                                    <ol start="6">
+                                                        <li class="PuceNumNiv1" value="6">Une fois les opérations commerciales sélectionnées, cliquez sur le bouton <b>OK</b> en haut de page pour valider l'opération.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Les prévisions commerciales sélectionnées et la transaction de change sont associées.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Vous pouvez consulter le lien entre prévisions commerciales et transactions de change dans depuis la page de gestion des prévisions commerciales et depuis la fiche de position FX.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Vous pouvez augmenter ultérieurement le montant de la transaction de change et le montant de l'opération commerciale, mais vous ne pouvez pas diminuer ceux-ci.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Consulter les liens transactions de change - prévisions commerciales</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Deux possibilités sont offertes.</p>
+                                                    <ul>
+                                                        <li class="PuceNiv1" value="1">Vous pouvez afficher les transactions de change liées à l'opération commerciale sélectionnée.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1">Cette fonctionnalité est accessible à partir du lien <b>Afficher le détail</b> disponible dans la page de gestion des opérations commerciales. Pour plus d'informations, <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"><a href="SUIVCOMM - Suivi des previsions commerciales.htm#vue_couvertures">cliquez ici</a>.</MadCap:conditionalText></p>
+                                                    <ul>
+                                                        <li class="PuceNiv1" value="1">Vous pouvez afficher les opérations commerciales liées à la transaction de change sélectionnée.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1">Cette fonctionnalité est accessible via la fiche de position <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span>. Pour plus d'informations, consultez la procédure ci-dessous.</p>
+                                                    <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Note.css');" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" style="width: 31px;" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">La procédure suivante décrit uniquement la consultation du détail des transactions de change et des prévisions commerciales pour un montant dans la fiche de position FX. Pour une description complète de la fiche de position FX, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="EDITION - Fiche position FX.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Fiche de position FX</a>.</MadCap:conditionalText></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans le volet <span style="font-weight: bold;" class="LocalizationSXTModulesTasks">Tâches de Modules</span>, sélectionnez l'option <b>Fiche position <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span></b> dans le dossier <span style="font-weight: bold;" class="LocalizationSXTReportsFolder">Édition</span> du module <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de modification du filtre défini par défaut pour cette fonctionnalité s'affiche.</p>
+                                                    <p data-mc-target-name="Capture filtre"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Filtre Fiche position FX 2.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="632" data-mc-height="610" src="../../Resources/Images/L_FX/Filtre Fiche position FX 2_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cette page vous permet de définir des critères de filtrage permettant de restreindre ou d'élargir la sélection de transactions à afficher dans la fiche de position <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span>. Si aucun critère n'est renseigné dans cette page, toutes les transactions existantes sont sélectionnées pour le calcul de la position <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span>.</p>
+                                                    <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Note.css');" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" style="width: 31px;" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">Pour une description des champs de cette page, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">procédure de <a href="EDITION - Fiche position FX.htm" title="" alt="" class="MCXref xref">Fiche de position FX</a>création de filtre pour la fiche de position <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span> dans la rubrique <a href="EDITION - Fiche position FX.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Fiche de position FX</a></MadCap:conditionalText>.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2">Configurez le filtre, puis cliquez sur <b>OK</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La fiche de position <span style="font-weight: bold;" class="LocalizationSXT_FX">FX</span> s'affiche avec les montants sous forme de tableau.</p>
+                                                    <p data-mc-target-name="Capture fiche position FX"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Fiche position FX 2.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="602" data-mc-height="635" src="../../Resources/Images/L_FX/Fiche position FX 2_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Pour une description complète des champs de cette page, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="EDITION - Fiche position FX.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Fiche de position FX</a>.</MadCap:conditionalText></p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="3">Double-cliquez sur un montant dans la colonne <b>Montant de consolidation</b> pour en consulter le détail.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Une fenêtre contextuelle s'affiche.</p>
+                                                    <p data-mc-target-name="Capture detail pos FX"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Fiche position FX detail.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="692" data-mc-height="235" src="../../Resources/Images/L_FX/Fiche position FX detail_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">La fenêtre répertorie les transactions de change prises en compte dans le montant, ainsi que les prévisions commerciales associées avec, pour chacune, le type, la catégorie et le numéro de l'opération, la société, les dates d'opération, de valeur et de livraison, la devise principale, le montant de la transaction dans la devise principale et le taux de change.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="4">Cliquez sur <b>OK</b> pour fermer la fenêtre contextuelle.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>
