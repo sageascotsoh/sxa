@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="&gt; Sage XRT&#160;Treasury|[%=System.LinkedTitle%]|Budget|Importation de données comptables|Configuration" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Configuration de la structure du fichier à importer</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Note.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Tableau standard.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="kanchor209"></a>Configuration de la structure du fichier à importer</h1>
+                                            <p>La configuration de la structure d'un fichier externe consiste à définir&#160;:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li class="PuceNiv1" value="1">la nature des données présentes dans le fichier,</li>
+                                                <li class="PuceNiv1" value="2">l'emplacement des données dans le fichier,</li>
+                                                <li class="PuceNiv1" value="3">la correspondance des données avec la base de données au moyen d'une table de correspondance, lorsque les codes diffèrent entre le fichier et la base de données.</li>
+                                            </ul>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Accéder à la page de paramétrage des structures de fichier</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Dans le volet <b><span class="LocalizationSXTModulesTasks">Tâches de Modules</span></b>, sélectionnez l'option <b>Structure d'importation de budget </b>dans le dossier <b><span class="LocalizationSXTSetupFolder">Paramétrage</span></b> du module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span>.</p>
+                                                    <p class="SautLigne">La page de paramétrage des structures de fichiers s'affiche avec la liste des structures paramétrées sous forme de tableau. Le tableau présente le code et le libellé de chaque structure, ainsi que le type de fonction concernée, le format de date attendu, la longueur type d'une transaction en caractères et l'existence ou non d'équivalences de valeurs dans une table de correspondance.</p>
+                                                    <p data-mc-target-name="Capture structure importation 1"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="777" data-mc-height="125" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="SautLigne">Pour des informations sur&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv1" style="margin-top: 12pt;" value="1" data-mc-conditions="Default.ScreenOnly"><b>la réorganisation de l'affichage des lignes</b> du tableau, <a href="ANNEXE - GUI.htm#top" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>,</li>
+                                                        <li class="PuceNiv1" value="2" data-mc-conditions="Default.ScreenOnly"><b>la recherche de texte</b> dans le tableau, <a href="ContextualTopics/Rechercher texte dans tableau parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                        <li class="PuceNiv1" value="3" data-mc-conditions=""><b>la création d'une ligne</b>, consultez la<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> rubrique</MadCap:conditionalText> ci-après.</li>
+                                                        <li class="PuceNiv1" value="4" data-mc-conditions=""><b>la modification de la structure et des équivalences</b> dans le tableau, cliquez sur le bouton <b>Modifier la structure</b> ou sur le bouton <b>Modifier les correspondances</b>. Vous accédez aux mêmes pages qu'en création.</li>
+                                                        <li class="PuceNiv1" value="5" data-mc-conditions="Default.ScreenOnly"><b>la suppression d'une ligne</b> dans le tableau, <a href="ContextualTopics/Supprimer element dans tableau page parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="creer_str_imp"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Créer une structure de fichier</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de paramétrage de structures de fichier, cliquez sur le bouton <b>Créer</b>.<br />La première page de l'Assistant Structures s'affiche.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture structure importation 2" data-mc-conditions=""><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 2.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="739" data-mc-height="640" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 2_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2">Saisissez les informations générales sur la structure.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau structure importation 2"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description des champs</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');margin-left: 0;margin-right: auto;display: none;" data-mc-target-name="Tableau structure importation 2">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Libellé</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Saisissez un libellé pour la nouvelle structure.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Type</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Si le champ est activé, sélectionnez le type de fonction à laquelle la structure est destinée.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Longueur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Indiquez la longueur en caractères d'un enregistrement, espaces compris. Un enregistrement du fichier est une chaîne de caractères comportant les informations d'une seule transaction.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Retour à la ligne</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Activez cette case à cocher si les enregistrements du fichier sont séparés par un retour à la ligne.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Format de date</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélectionnez le format de date attendu pour les dates d'opération.<br /><i>dd</i> désigne le jour, <i>MM</i> le mois et <i>yyyy</i> l'année.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Séparateur de date</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélectionnez le type de séparateur entre le jour, le mois et l'année de la date de l'opération.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Symbole décimal</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélectionnez le séparateur de décimales des montants.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Nombre de chiffres après la virgule</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélectionnez le nombre de décimales après la virgule des montants.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Direction débit</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Sélectionnez le signe indiquant un montant débiteur.<br />Seul ce signe sera reconnu comme indicateur de montant débiteur.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Direction crédit</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">Sélectionnez le signe indiquant un montant créditeur.<br />Seul ce signe sera reconnu comme indicateur de montant créditeur.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="3">Cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR fleche drte.JPG" /><b>&#160;Définir les éléments de la structure</b> pour continuer le paramétrage de la structure de fichier.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de paramétrage des champs de chaque enregistrement du fichier s'affiche.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture structure importation champs 3"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 3.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="687" data-mc-height="530" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 3_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">Si vous cliquez sur le bouton <b><img src="../../Resources/Images/L_Liquidity/Bouton STR croix rouge.JPG" />&#160;Annuler,              </b>le paramétrage en cours est annulé et la liste des structures de fichier paramétrées est réaffichée.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1" style="margin-bottom: 12pt;">Cette page vous permet de paramétrer sept champs pour chaque enregistrement, correspondant à sept types d'informations sur la transaction.</p>
+                                                    <p class="IndentPuceNiv1SautLigne" data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau structure importation champs 3"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher la description des informations du fichier à paramétrer</a>.</p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');margin-left: 0;margin-right: auto;display: none;" data-mc-target-name="Tableau structure importation champs 3">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Champ</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Entité</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Code identifiant l'entité à laquelle est rattachée la transaction<br />Si l'entité a un code différent dans le fichier et dans le module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span>, dans l'étape suivante du paramétrage, vous devrez spécifier les équivalences de valeurs dans une table de correspondance.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Code budgétaire</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Code identifiant la nature budgétaire à laquelle est rattachée la transaction<br />Si la nature budgétaire a un code différent dans le fichier et dans le module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span>, dans l'étape suivante du paramétrage, vous devrez spécifier les équivalences de valeurs dans une table de correspondance.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Montant transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Montant de la transaction dans la devise spécifiée</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Sens transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Signe identifiant le sens débiteur ou créditeur de la transaction (paramétrage effectué dans la page précédente de l'Assistant)<br />Champ facultatif</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Devise de transaction</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Code identifiant la devise de la transaction<br />Champ facultatif<br />Si la devise a un code différent dans le fichier et dans le module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span>, dans l'étape suivante du paramétrage, vous devrez spécifier les équivalences de valeurs dans une table de correspondance.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Date d'opération</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Date de l'opération (format paramétré dans la page précédente de l'Assistant)</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Libellé</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Description textuelle de l'objet de la transaction</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Devise de l'exercice</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">Code identifiant de la devise de l'exercice dans lequel seront importées les transactions<br />Champ facultatif<br />Si vous gérez un exercice par devise, il peut s'avérer judicieux d'activer ce champ.<br /></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="4">Spécifiez les paramètres des champs de chaque enregistrement du fichier.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-conditions="Default.ScreenOnly"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Tableau structure importation champs 3b"><img class="MCToggler_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher les paramètres</a>
+                                                    </p>
+                                                    <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');margin-left: 0;margin-right: auto;display: none;" data-mc-target-name="Tableau structure importation champs 3b">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Paramètre</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Type</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Ce champ est défini par défaut et non modifiable.<br />Il indique le type de chaîne&#160;: «&#160;AN&#160;» pour du texte alphanumérique, «&#160;D&#160;» pour une date et «&#160;M&#160;» pour un montant.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Inclus</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Activez cette case à cocher pour importer la valeur de l'information du fichier dans la base de données.<br />Désactivez cette case à cocher si cette information n'est pas présente dans le fichier ou si vous ne souhaitez pas l'importer.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Obligatoire</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Activez cette case à cocher pour spécifier que l'information doit être renseignée dans le fichier.<br />La transaction sera rejetée si une information obligatoire n'est pas renseignée.<br />Pour plus d'informations sur les transactions rejetées, leur correction et leur réimportation, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="IMPORT - Rejets.htm" title="" alt="" class="Xref_Help MCXref xref xrefXref_Help">Rejets</a>.</MadCap:conditionalText></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Position</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Indiquez la position du premier caractère du champ comportant l'information dans l'enregistrement.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Longueur</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Si le champ comportant l'information a une longueur fixe, indiquez ici sa longueur.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Longueur var.</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Si le champ comportant l'information a une longueur variable, activez cette case à cocher.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Caractère de fin</td>
+                                                                <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">Si le champ comportant l'information a une longueur variable, indiquez ici le caractère délimitant la fin du champ.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="5">Cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR fleche drte.JPG" />&#160;<b>Paramétrer les tables de correspondance</b> pour continuer le paramétrage.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de paramétrage des tables de correspondance s'affiche.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv2" value="1">Si les codes d'entités, de devises et de natures budgétaires dans le fichier sont identiques à ceux de la base de données, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR fleche drte.JPG" />&#160;<b>Tester la structure</b> pour sauter cette étape de paramétrage et passer directement au test de la structure.<b></b></li>
+                                                        <li class="PuceNiv2" value="2">Pour sauter l'étape de test de la structure de fichiers et valider directement le paramétrage, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR coche verte.JPG" />&#160;<b>Valider</b>.</li>
+                                                        <li class="PuceNiv2" value="3">Pour annuler le paramétrage en cours et réafficher la liste des structures de fichiers paramétrées, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR croix rouge.JPG" />&#160;<b>Annuler</b>.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture structure importation 4"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 4.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="814" data-mc-height="548" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 4_thumb_150_100.jpg" tabindex="" /></a>
+                                                        <br />
+                                                    </p>
+                                                    <p class="IndentPuceNiv1SautLigne">Cette page comporte trois onglets, permettant chacun de configurer la table de correspondance concernée&#160;: <b>Entités</b>, <b>Codes budgétaires</b> ou <b>Devises</b>.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Chaque onglet présente un tableau à trois colonnes.</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">La première colonne, intitulée <b>N°</b>, comporte un numéro identifiant chaque correspondance.</li>
+                                                        <li class="PuceNiv2" value="2">La deuxième colonne, intitulée <b>Zone interne</b>, comporte les codes enregistrés dans la base de données de <span class="LocalizationSXT">Sage XRT Treasury</span>.</li>
+                                                        <li class="PuceNiv2" value="3">La troisième colonne, intitulée <b>Zone externe</b>, comporte les codes enregistrés dans le fichier.</li>
+                                                    </ul>
+                                                    <ol start="6">
+                                                        <li class="PuceNumNiv1" value="6">Cliquez sur un onglet, cliquez sur le bouton <b>Ajouter </b>pour ajouter une ligne de valeurs équivalentes dans l'onglet.</li>
+                                                        <li class="PuceNumNiv1" value="7">Dans la ligne qui s'affiche dans le tableau, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton Points de suspension.JPG" /> dans la colonne <b>Zone interne</b> pour sélectionner le code interne à la base de données. Dans la colonne <b>Zone externe</b>, saisissez le code attendu dans le fichier provenant du système externe.</li>
+                                                        <li class="PuceNumNiv1" value="8">Cliquez sur le bouton <b>Ajouter</b> pour ajouter une nouvelle ligne ou sur le bouton <b>Supprimer</b> pour supprimer la ligne sélectionnée.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Répétez les étapes 7 à 8 autant de fois que nécessaire pour compléter la table de correspondance, puis procédez de même dans les autres onglets.</p>
+                                                    <ol start="6" data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="9">Cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR fleche drte.JPG" />&#160;<b>Tester la structure</b> pour tester le paramétrage sur un fichier.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de test de la structure s'affiche.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture structure importation 5"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 5.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="815" data-mc-height="490" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 5_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="10">Dans la zone <b>Fichier</b>, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton Points de suspension.JPG" /> pour afficher l'explorateur du module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span> et sélectionner un fichier à tester.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Une fenêtre contextuelle s'affiche.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture structure importation 5b"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 5b.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="286" data-mc-height="482" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 5b_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="11">Dans l'explorateur, sélectionnez le dossier où se trouve le fichier.<br />Le chemin s'affiche dans la zone <b>Chemin sélectionné</b> et les fichiers contenus dans le dossier sont répertoriés dans le tableau au bas de la fenêtre.</li>
+                                                        <li class="PuceNumNiv1" value="12">Double-cliquez sur un nom de fichier pour le sélectionner ou cliquez dessus, puis cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton coche bleue.JPG" /> pour valider votre sélection.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de l'Assistant est réaffichée et le chemin du fichier est affiché dans le champ <b>Fichier</b>.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="13">Cliquez sur le bouton <b>Tester</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Les transactions trouvées sont affichées dans le tableau avec pour chacune le code de l'entité, le code de la nature budgétaire, le montant de la transaction, sa devise, la date de l'opération et le descriptif de la transaction.</p>
+                                                    <p class="IndentPuceNiv1">Le nombre de transactions trouvées dans le fichier s'affiche en bas du tableau.</p>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture test reussi"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 6.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="820" data-mc-height="540" src="../../Resources/Images/L_Liquidity/Parametrer structure importation budget 6_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="14">Vérifiez que l'analyse du fichier correspond au résultat attendu en termes de nombre de transactions et de valeurs dans les champs. Corrigez la structure ou le fichier au besoin.</li>
+                                                        <li class="PuceNumNiv1" value="15">Une fois que le test a fourni les résultats attendus, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton STR coche verte.JPG" />&#160;<b>Valider </b>pour valider et enregistrer la structure.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">La page de paramétrage des structures de fichiers est réaffichée avec, en bas de la liste des structures paramétrées, la nouvelle structure enregistrée.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Vous pouvez passer à l'étape suivante, le paramétrage des modalités d'importation.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Dupliquer une structure de fichier</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Vous pouvez créer une structure en dupliquant les paramètres d'une structure existante.</p>
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de paramétrage des structures, cliquez sur la structure à dupliquer, puis cliquez sur le bouton <b>Dupliquer</b> dans la barre d'actions.</li>
+                                                        <li class="PuceNumNiv1" value="2">La page de création de structure s'affiche, avec les paramètres de la structure dupliquée. Un numéro identifiant est créé automatiquement pour la structure par incrémentation.<br /></li>
+                                                        <p data-mc-target-name="Capture Duplication structure" data-mc-conditions=""><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Dupliquer structure importation budget.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="708" data-mc-height="666" src="../../Resources/Images/L_Liquidity/Dupliquer structure importation budget_thumb_150_100.jpg" tabindex="" /></a>
+                                                        </p>
+                                                        <li class="PuceNumNiv1" value="3">Dans la zone <b>Libellé</b>, saisissez le libellé de la nouvelle structure.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1SautLigne">Vous pouvez modifier les paramètres de la structure dupliquée.</p>
+                                                    <p class="IndentPuceNiv1">Pour plus d'informations sur ces champs, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique</MadCap:conditionalText> précédente.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="kanchor210"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Modifier les correspondances de valeurs entre fichier et base de données</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Vous pouvez enrichir ou modifier en permanence les correspondances de valeurs entre fichier et base de données.</p>
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de paramétrage des structures, cliquez sur la structure à modifier, puis cliquez sur le bouton <b>Modifier les correspondances</b> dans la barre d'actions.</li>
+                                                        <li class="PuceNumNiv1" value="2">La page de définition des tables de correspondance s'affiche, avec les correspondances paramétrées pour la structure sélectionnée.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture Modifier correspondances"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Modifier les correspondances.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="816" data-mc-height="610" src="../../Resources/Images/L_Liquidity/Modifier les correspondances_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Pour plus d'informations sur les champs de cette page, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique</MadCap:conditionalText> décrivant la création de structure de fichier à importer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

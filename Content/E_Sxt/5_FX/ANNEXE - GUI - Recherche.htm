@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="" data-mc-conditions="Default.3Revised" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Recherche de texte</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Tableau standard.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="Recherch"></a><a name="kanchor201"></a>Recherche de texte</h1>
+                                            <p>La barre de recherche de texte alphanumérique vous permet de rechercher du texte dans les informations affichées sur la page sélectionnée.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Rechercher du texte dans un tableau</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Dans une page présentant des informations sous forme de tableau (cas des fonctions de paramétrage et d'importation), la barre d'outils <strong>Rechercher dans le tableau</strong> est&#160;affichée&#160;:<br /></p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/BarredoutilsRecherche.JPG"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="500" data-mc-height="71" src="../../Resources/Images/L_FX/BarredoutilsRecherche_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Pour effectuer une recherche&#160;dans un tableau&#160;:</p>
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Entrez le texte à rechercher dans le champ<strong class="OptionName"> Mot-clé</strong>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Gardez à l'esprit que la recherche s'effectuera sur l'expression exacte.<br />Vous pouvez insérer le signe de pourcentage % en tant que caractère générique.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="2">Sélectionnez la colonne cible de la recherche.<br />Vous pouvez choisir d'effectuer la recherche dans toutes les colonnes ou dans une colonne spécifique.</li>
+                                                        <li class="PuceNumNiv1" value="3">Si vous souhaitez rechercher le mot entier uniquement, cliquez sur le bouton <strong>Options</strong>, puis activez l'option <strong>Mot entier</strong>.<br />Autrement, la recherche s'effectuera sur tous les mots comportant la chaîne spécifiée.</li>
+                                                        <li class="PuceNumNiv1" value="4">Pour activer ou désactiver l'option de prise en compte de la casse, cliquez sur le bouton <strong>Options</strong>, puis activez l'option <strong>Respecter la casse</strong>.</li>
+                                                        <li class="PuceNumNiv1" value="5">Cliquez sur le bouton <strong>Appliquer</strong>.<br />Les résultats de la recherche s'affichent sous forme de tableau.</li>
+                                                    </ol>
+                                                    <p>L'historique des recherches est affiché au bas de la page, vous permettant de relancer les recherches précédentes&#160;:</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Historique Recherche.JPG"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="556" data-mc-height="75" src="../../Resources/Images/L_FX/Historique Recherche_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Le bouton <strong>Modifier filtre</strong>, situé en bas à droite de la page, vous permet de construire un filtre de recherche avec des critères avancés.</p>
+                                                    <p>Lorsque vous cliquez sur ce bouton, la boîte de dialogue de l'éditeur de filtre s'affiche, vous permettant de saisir des critères de recherche.&#160;</p>
+                                                    <p data-mc-target-name="Capture concepteur de filtre"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Filtre de recherche.JPG"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="439" data-mc-height="288" src="../../Resources/Images/L_FX/Filtre de recherche_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p>L'expression du filtre est affichée, composée de groupes de conditions.</p>
+                                                    <p class="SautLigne">Chaque groupe de conditions comporte&#160;:</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv1" value="1">un opérateur logique (ou booléen) (<span style="color: #ff0000;">AND</span>, <span style="color: #ff0000;">OR</span>, etc.), affiché en police <span style="color: #ff0000;">rouge</span>,</li>
+                                                        <li class="PuceNiv1" value="2">des conditions (une par ligne), comportant&#160;:</li>
+                                                        <li class="PuceNiv2" value="3">le nom de la colonne, en police <span style="color: #0000ff;">bleue</span>, sur laquelle porte la condition,</li>
+                                                        <li class="PuceNiv2" value="4">un opérateur de comparaison (<span style="color: #006400;">Egale</span>, <span style="color: #006400;">Supérieur à</span>, etc.) en police <span style="color: #006400;">verte</span>,</li>
+                                                        <li class="PuceNiv2" value="5">des valeurs en police noire.</li>
+                                                    </ul>
+                                                    <p class="SautLigne">Pour ajouter une condition au groupe, cliquez sur le signe <b>+</b> en regard de l'opérateur.</p>
+                                                    <p>Pour supprimer une condition du groupe, cliquez sur le signe <b>x</b> en regard de la condition.</p>
+                                                    <p class="SautLigne">Cliquez sur un opérateur ou un nom de colonne pour afficher le menu contextuel correspondant.</p>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot dropDownHotspotIndenteNonGras MCDropDownHotSpot_ MCHotSpotImage" style="color: #ff5800;"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher le menu contextuel des opérateurs logiques et sa description</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p data-mc-target-name="Capture Editeur filtre 2"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Editeur de filtre 2.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="438" data-mc-height="288" src="../../Resources/Images/L_FX/Editeur de filtre 2_thumb_150_100.jpg" tabindex="" /></a>
+                                                            </p>
+                                                            <p class="SautLigneAvantEtAprès">Le tableau ci-après décrit les options de ce menu.</p>
+                                                            <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');" data-mc-target-name="Tableau operateurs logiques">
+                                                                <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                                <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                                <thead>
+                                                                    <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                        <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Option</th>
+                                                                        <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Description</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">AND</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Opérateur logique&#160;: ET&#160;logique<br />Cet opérateur permet de vérifier que les deux conditions sont réalisées.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">OR</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Opérateur logique&#160;: OU logique non exclusif<br />Cet opérateur permet de vérifier qu'au moins une des deux conditions est réalisée.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">NOT&#160;AND</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Opérateur logique&#160;: NON (<i>condition_1</i> ET <i>condition_2</i>)<br />Cet opérateur permet de vérifier l'inverse du ET&#160;logique.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">NOT&#160;OR</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Opérateur logique&#160;: NI <i>condition_1</i> NI <i>condition_2</i><br />Cet opérateur permet de vérifier l'inverse du OU&#160;logique.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Ajouter une condition</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Cette option permet d'ajouter une condition au groupe sélectionné.<br />La nouvelle condition dépendra du même opérateur logique que les autres conditions du groupe.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Ajouter un groupe</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Cette option permet d'ajouter un groupe de conditions articulées par un opérateur logique que vous devez sélectionner.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Supprimer le groupe</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1">Cette option permet de supprimer le groupe de conditions sélectionné.<br />(Option non affichée pour le groupe racine)</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Tout effacer</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1">Cette option permet de supprimer l'intégralité du filtre.<br />Elle est affichée uniquement pour le groupe de conditions racine.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Afficher  le menu contextuel des opérateurs de comparaison et sa description</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p data-mc-target-name="Capture Editeur filtre 3"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_FX/Menu contxt rechch 1.PNG"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="160" data-mc-height="346" src="../../Resources/Images/L_FX/Menu contxt rechch 1_thumb_150_100.png" tabindex="" /></a>
+                                                            </p>
+                                                            <table class="TableStyle-Tableau_standard" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');" data-mc-target-name="Tableau operateurs comparaison">
+                                                                <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                                <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                                <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                                <thead>
+                                                                    <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                        <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Option</th>
+                                                                        <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Valeur recherchée</th>
+                                                                        <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Syntaxe</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Egale</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur exacte à vérifier</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Egale</span> <i>valeur</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Différent de</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur exacte à exclure</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Différent de</span> <i>valeur</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Supérieur à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur strictement supérieure à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Supérieur à</span> <i>valeur</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Supérieur ou égal à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur supérieure ou égale à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Supérieur ou égal à</span> <i>valeur</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Inférieur à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur strictement inférieure à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Inférieur à</span> <i>valeur</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Inférieur ou égal à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur inférieure ou égale à</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Inférieur ou égal à</span> <i>valeur</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Entre</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur comprise obligatoirement dans la plage de valeurs spécifiée avec un plancher et un plafond (non compris dans la plage de valeurs)</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Entre </span><i>valeur_1</i> <span style="color: #006400;">et</span> <i>valeur_2</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">N'est pas inclus entre</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur obligatoirement hors de la plage de valeurs spécifiée avec un plancher et un plafond (compris dans la plage de valeurs à exclure)</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">N'est pas inclus</span> entre<span style="color: #006400;"> </span><i>valeur_1</i> <span style="color: #006400;">et</span> <i>valeur_2</i></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Contient</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur contenant obligatoirement la chaîne de caractères spécifiée</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Contient </span><i>valeur_1</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Ne contient pas</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur ne contenant pas la chaîne de caractères spécifiée</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Ne contient pas </span><i>valeur_1</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Commence par</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur commençant par</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Commence par </span><i>valeur_1</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Termine par</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur terminant par</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Termine par </span><i>valeur_1</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Comme</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur recherchée comportant un caractère générique<br />Utilisez le signe % comme caractère générique.<br />Si vous saisissez <i>a</i><b style="font-style: italic;">%</b><i>z</i> comme chaîne de recherche, la recherche retournera toutes les valeurs commençant par <i>a</i> et terminant par <i>z</i>.</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Comme </span><i>chaine_1<b>%</b>chaine_2</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">N'est pas comme</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur ne correspondant pas à la chaîne de recherche spécifiée, laquelle comporte un caractère générique<br />Utilisez le signe % comme caractère générique.<br />Si vous saisissez <i>a</i><b style="font-style: italic;">%</b><i>z</i> comme chaîne de recherche, la recherche retournera toutes les valeurs ne commençant par <i>a</i> et ne terminant pas par <i>z</i>.</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">N'est pas comme </span><i>chaine_1</i><b style="font-style: italic;">%</b><i>chaine_2</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Blanc</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur non renseignée</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Blanc</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">Non blanc</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur obligatoirement renseignée</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">Non blanc</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1">ANY</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Valeur comprise dans la liste spécifiée<br />Cliquez sur le signe + pour ajouter une valeur à la liste.</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1"><span style="color: #006400;">ANY </span>(<i>valeur_1</i>, <i>valeur_2</i>, <i>valeur_3</i>)</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                                        <td class="TableStyle-Tableau_standard-BodyB-Column1-Body1">Ne fait pas partie de</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyC-Column2-Body1">Valeur non comprise dans la liste spécifiée<br />Cliquez sur le signe + pour ajouter une valeur à la liste.</td>
+                                                                        <td class="TableStyle-Tableau_standard-BodyA-Column2-Body1"><span style="color: #006400;">Ne fait pas partie de </span>(<i>valeur_1</i>, <i>valeur_2</i>, <i>valeur_3</i>)</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <p class="SautLigne">Les valeurs du menu contextuel de colonnes dépendent des colonnes affichées dans le tableau.</p>
+                                                    <p class="SautLigne">Cliquez sur le bouton&#160;:</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNiv1" value="1"><b>OK </b>pour appliquer le filtre et revenir au tableau,</li>
+                                                        <li class="PuceNiv1" value="2"><b>Appliquer </b>pour appliquer le filtre sans fermer la boîte de dialogue,</li>
+                                                        <li class="PuceNiv1" value="3"><b>Annuler </b>pour annuler les paramètres de filtrage et revenir au tableau.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

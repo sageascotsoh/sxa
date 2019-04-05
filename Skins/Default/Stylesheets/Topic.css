@@ -715,6 +715,13 @@ video._Sage_mp4_0
 video._0
 {
 	display: inline-block;
+	height: auto;
+	width: 750px;
+}
+
+video.object_1
+{
+	display: inline-block;
 	width: 800px;
 	height: auto;
 }
@@ -737,6 +744,12 @@ video._mp4window_0
 	box-shadow: 0 0 5px #ccc;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+.mc-wrapper .mc-viewport.NewFeatures
+{
+	border: none 0px transparent;
+	box-shadow: none;
 }
 
 div.MCSlide
@@ -876,19 +889,6 @@ div.MCSlide
 }
 
 .mc-wrapper .mc-viewport.WhatsNew
-{
-	border: none 0px transparent;
-	box-shadow: none;
-}
-
-video.object_1
-{
-	display: inline-block;
-	height: auto;
-	width: 750px;
-}
-
-.mc-wrapper .mc-viewport.NewFeatures
 {
 	border: none 0px transparent;
 	box-shadow: none;
