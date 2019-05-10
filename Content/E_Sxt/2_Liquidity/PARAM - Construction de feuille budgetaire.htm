@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="&gt; Sage XRT&#160;Treasury|[%=System.LinkedTitle%]|Budget|Paramétrage du budget|Feuille de budget" data-mc-file-tags="OHCGlobal.GBL">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Construction de feuille budgétaire</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-FR_3.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-Print.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-LeftArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Toolbar-RightArrow.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Note.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Tableau standard.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>Filtre</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="search-container">
+                                    <form class="search" action="#">
+                                        <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                            <input class="search-field needs-pie" type="search" placeholder="Rechercher..." />
+                                            <div class="search-filter-wrapper">
+                                                <div class="search-filter">
+                                                    <div class="search-filter-content">
+                                                        <ul>
+                                                            <li>Tous</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-submit-wrapper" dir="ltr">
+                                                <div class="search-submit" title="Rechercher">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="top-bar">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer la langue">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                                </button>
+                                                <button class="button needs-pie print-button" title="Imprimer rubrique">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                                </button>
+                                                <button class="button needs-pie previous-topic-button" title="Sujet Précédent">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Sujet Suivant">
+                                                    <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div> </div>
+                                    <div class="topic-layout">
+                                        <div>
+                                            <div class="side-menu">
+                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h1 class="LegacySXT"><a name="kanchor259"></a>Construction de feuille budgétaire</h1>
+                                            <p>Avant de paramétrer une construction de feuille budgétaire, vous devez avoir préalablement défini&#160;:</p>
+                                            <ul>
+                                                <li class="PuceNiv1" value="1">votre structure budgétaire,</li>
+                                                <li class="PuceNiv1" value="2">les règles de gestion permettant de calculer les montants budgétaires par nature budgétaire.</li>
+                                            </ul>
+                                            <p class="SautLigne">Tous ces éléments sont pris en compte lors du paramétrage de la construction de feuille budgétaire.</p>
+                                            <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                <col class="TableStyle-Note-Column-Column1" />
+                                                <col class="TableStyle-Note-Column-Column2" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Note-Body-Body1">
+                                                        <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                            <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                        </td>
+                                                        <td class="TableStyle-Note-BodyA-Column2-Body1">Veillez à paramétrer les règles de gestion nécessaires, en particulier les règles de gestion relatives à la TVA, sans quoi les montants finaux de votre budget de trésorerie seraient faussés.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Les règles de gestion affichées dépendent de la nature budgétaire choisie pour chacune. Cette nature budgétaire est sélectionnée dans la zone <b>Identification </b>de la page de paramétrage de règle de gestion.</p>
+                                            <p class="SautLigne">Pour plus d'informations sur le paramétrage des règles de gestion, consultez<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> la rubrique <a href="PARAM - Regles de gestion.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Règles de gestion</a>.</MadCap:conditionalText></p>
+                                            <p class="SautLigneAvantEtAprès">Pour plus d'informations sur le paramétrage des natures budgétaires, consultez<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> la rubrique <a href="PARAM - Natures budgetaires.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Codification des natures budgétaires</a>.</MadCap:conditionalText></p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Accéder à la page de paramétrage de constructions de feuille budgétaire</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Dans le volet <b><span class="LocalizationSXTModulesTasks">Tâches de Modules</span></b>, sélectionnez l'option <b>Construction de feuille budgétaire</b> dans le dossier <b><span class="LocalizationSXTSetupFolder">Paramétrage</span></b> du module <span style="font-weight: bold;" class="LocalizationSXT_Liquidity">Budget de Trésorerie</span>.</p>
+                                                    <p>La page de paramétrage de construction de feuille budgétaire s'affiche avec la liste des constructions paramétrées sous forme de tableau.</p>
+                                                    <p class="SautLigne">Le tableau présente le code et le libellé de chaque construction, ainsi que la structure associée.</p>
+                                                    <p data-mc-target-name="Capture Paramétrage dessin"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Param construction 1.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="762" data-mc-height="127" src="../../Resources/Images/L_Liquidity/Param construction 1_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="SautLigne">Pour des informations sur&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv1" style="margin-top: 12pt;" value="1" data-mc-conditions="Default.ScreenOnly"><b>la réorganisation de l'affichage des lignes</b> du tableau, <a href="ANNEXE - GUI - Tableau reorg.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>,</li>
+                                                        <li class="PuceNiv1" value="2" data-mc-conditions="Default.ScreenOnly"><b>la recherche de texte</b> dans le tableau, <a href="ContextualTopics/Rechercher texte dans tableau parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                        <li class="PuceNiv1" value="3" data-mc-conditions=""><b>la création d'une ligne</b>, consultez la<MadCap:conditionalText data-mc-conditions="Default.ScreenOnly"> rubrique</MadCap:conditionalText> ci-après.</li>
+                                                        <li class="PuceNiv1" value="4" data-mc-conditions="Default.ScreenOnly"><b>la modification d'une ligne</b> dans le tableau, <a href="ContextualTopics/Modifier element dans tableau parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                        <li class="PuceNiv1" value="5" data-mc-conditions="Default.ScreenOnly"><b>la suppression d'une ligne</b> dans le tableau, <a href="ContextualTopics/Supprimer element dans tableau page parametrage.htm" class="MCTopic MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">cliquez ici</a>.</li>
+                                                    </ul>
+                                                    <p class="SautLigneAvantEtAprès">Vous pouvez modifier la présentation du tableau&#160;: affichage des colonnes, filtrage sur des critères de sélection, groupement de lignes en fonction de critères, etc. Pour plus d'informations sur cette fonctionnalité, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="ANNEXE - GUI - Tableau reorg.htm" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Réorganisation de l'affichage d'un tableau</a>.</MadCap:conditionalText></p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Créer une construction</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol data-mc-continue="false">
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de paramétrage des constructions, cliquez sur le bouton <b>Créer</b>.<br />La page de création de construction de feuille budgétaire s'affiche.<br /></li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1" data-mc-target-name="Capture Création dessin 1" data-mc-conditions=""><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Creer construction FB.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="578" data-mc-height="481" src="../../Resources/Images/L_Liquidity/Creer construction FB_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p class="IndentPuceNiv1">Cette page est composée de deux parties&#160;:</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="PuceNumNiv2" value="1">un en-tête comportant les informations d'identification de la construction (codes et libellés de la construction et de la structure),</li>
+                                                        <li class="PuceNumNiv2" value="2">un corps de page, permettant d'affecter des règles de gestion aux natures budgétaires.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv2">Chaque onglet affiche, sous forme de tableau, la liste des codes des natures budgétaires et les règles de gestion associées aux natures budgétaires.</p>
+                                                    <ol start="2">
+                                                        <li class="PuceNumNiv1" value="2">Dans la zone <b>Construction</b>, saisissez le code de la construction et sa description.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Le code de la construction est un identifiant unique qui ne pourra pas être modifié ultérieurement.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="3">Dans la zone <b>Structure</b>, cliquez sur le bouton <img src="../../Resources/Images/L_Liquidity/Bouton Points de suspension.JPG" /> pour afficher la liste des structures configurées. Dans la fenêtre contextuelle qui s'affiche, double-cliquez sur une ligne pour la sélectionner.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Le code et le nom de la structure sélectionnée s'affichent dans la page de paramétrage de la structure.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Dans le corps de page, le tableau affiche&#160;:</p>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1">en première colonne, la liste des codes des natures budgétaires associées à la structure sélectionnée,</li>
+                                                        <li class="PuceNiv2" value="2">en deuxième colonne, la règle de gestion associée par défaut à chaque nature budgétaire pour le budget opérationnel.</li>
+                                                    </ul>
+                                                    <p class="IndentPuceNiv1SautLigne">Les champs de la deuxième colonne sont vides lorsqu'aucune règle de gestion n'est définie <u>par défaut</u> pour la nature budgétaire et le budget opérationnel.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Tous les champs de la deuxième colonne sont modifiables excepté certaines natures budgétaires&#160;: solde d'ouverture, solde de clôture, totaux livrés par défaut avec le logiciel. Le tableau suivant répertorie ces natures budgétaires spécifiques&#160;:</p>
+                                                    <table style="margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/Tableau standard.css');" class="TableStyle-Tableau_standard" cellspacing="0">
+                                                        <col class="TableStyle-Tableau_standard-Column-Column1" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <col class="TableStyle-Tableau_standard-Column-Column2" />
+                                                        <thead>
+                                                            <tr class="TableStyle-Tableau_standard-Head-Header1">
+                                                                <th class="TableStyle-Tableau_standard-HeadE-Column1-Header1">Code</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadF-Column2-Header1">Description</th>
+                                                                <th class="TableStyle-Tableau_standard-HeadD-Column2-Header1">Type</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">BALDECST</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Solde avant décision</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Sous-total</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">BRINEXPT</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Total dépenses emprunts et investissement</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Total catégorie</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">BRINRECT</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Total recettes emprunts et investissement</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Total catégorie</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">ENDBAL</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Solde final</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Sous-total</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">NETOPEST</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Total net exploitation</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Sous-total</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">NOPEXPT</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Total dépenses hors exploitation</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Total catégorie</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">NOPRECT</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;"><span class="span_1">Total recettes hors exploitation</span>
+                                                            </td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Total catégorie</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">OPEEXPT</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1">Total dépenses exploitation</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Total catégorie</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">OPERECT</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;"><span class="span_1">Total recettes exploitation</span>
+                                                            </td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Total catégorie</td>
+                                                        </tr>
+                                                        <tr style="height: 3pt;" class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">SPSREQST</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Excédents</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Sous-total</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Tableau_standard-Body-Body1">
+                                                            <td class="TableStyle-Tableau_standard-BodyE-Column1-Body1" style="text-align: left;">STARTBAL</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyF-Column2-Body1" style="text-align: left;">Solde initial</td>
+                                                            <td class="TableStyle-Tableau_standard-BodyD-Column2-Body1" style="text-align: left;">Sous-total</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p class="IndentPuceNiv1">Pour plus d'informations sur ces natures budgétaires, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique <a href="PARAM - Natures budgetaires systeme.htm" title="" alt="" class="XrefSansTexte MCXref xref xrefXrefSansTexte">Codification des natures budgétaires système</a>.</MadCap:conditionalText></p>
+                                                    <ol start="4">
+                                                        <li class="PuceNumNiv1" value="4">Dans l'onglet <b>Feuille budgétaire opérationnelle</b>, affectez une règle de gestion à chaque nature budgétaire de la structure de feuille budgétaire opérationnelle, comme suit.</li>
+                                                    </ol>
+                                                    <ol>
+                                                        <li class="PuceNumNiv2" value="1">Dans la colonne <b>Sélection de règles de gestion</b>, cliquez sur la cellule en regard du code de la nature budgétaire à laquelle vous souhaitez affecter une règle de gestion.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv2">La liste de règles de gestion paramétrées pour la nature budgétaire sélectionnée s'affiche dans une fenêtre contextuelle avec, pour chaque règle, le nom de la règle et la formule.</p>
+                                                    <p class="IndentPuceNiv2"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Pop-up regles de gestion.jpg"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="304" data-mc-height="323" src="../../Resources/Images/L_Liquidity/Pop-up regles de gestion_thumb_150_100.jpg" tabindex="" /></a>
+                                                    </p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv2" value="2">Cliquez sur une ligne pour la sélectionner.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv2">La formule de la règle de gestion sélectionnée s'affiche dans la page de création de la construction.</p>
+                                                    <ul>
+                                                        <li class="PuceNiv3" value="1">Si, pour cette construction, vous ne souhaitez pas inclure les montants d'une nature budgétaire standard dans les soldes, activez la case à cocher <b>Excl. sol.</b></li>
+                                                    </ul>
+                                                    <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                        <col class="TableStyle-Note-Column-Column1" />
+                                                        <col class="TableStyle-Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Note-Body-Body1">
+                                                                <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                                    <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                                </td>
+                                                                <td class="TableStyle-Note-BodyA-Column2-Body1">Cette option est utile pour les natures budgétaires standard uniquement, par exemple en cas de sous-total pour éviter de compter un montant en double dans les soldes. Si une nature budgétaire est toujours à exclure des soldes, sans exception, définissez cette nature comme nature budgétaire système et non comme nature budgétaire standard.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ul>
+                                                        <li class="PuceNiv3" value="1">Si vous souhaitez masquer une nature budgétaire et ses montants dans la feuille budgétaire, activez la case à cocher <b>Masquer</b>.</li>
+                                                    </ul>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Exemple</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>Soient les codes de natures budgétaires correspondant à différents types de vente&#160;: <span class="TexteSaisi">VENA</span>, <span class="TexteSaisi">VENB</span>, <span class="TexteSaisi">VENC</span></p>
+                                                            <p>Soit le sous-total des ventes <span class="TexteSaisi">VENT </span>défini tel que&#160;: <span class="TexteSaisi">VENT&#160;=&#160;VENA&#160;+&#160;VENB&#160;+&#160;VENC</span></p>
+                                                            <p>Par exemple, vous pouvez choisir de masquer dans le budget de trésorerie les natures budgétaires <span class="TexteSaisi">VENA</span>, <span class="TexteSaisi">VENB</span> et <span class="TexteSaisi">VENC</span>, et afficher uniquement le sous-total des ventes <span class="TexteSaisi">VENT</span>.</p>
+                                                        </div>
+                                                    </div>
+                                                    <ol start="5">
+                                                        <li class="PuceNumNiv1" value="5">Cliquez sur l'onglet <b>Feuille budgétaire trésorerie</b>.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Cet onglet se présente comme l'onglet <b>Feuille budgétaire opérationnelle</b>.</p>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="6">Affectez une règle de gestion à chaque nature budgétaire de la structure de feuille budgétaire opérationnelle, comme dans l'onglet <b>Feuille budgétaire opérationnelle</b>.</li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="7">Cliquez sur le bouton&#160;:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li class="PuceNiv2" value="1"><b>Appliquer </b>pour enregistrer le paramétrage de la construction et créer une autre construction,</li>
+                                                        <li class="PuceNiv2" value="2"><b>OK </b>pour enregistrer le paramétrage de la construction et réafficher la liste des constructions paramétrées,</li>
+                                                    </ul>
+                                                    <ul data-mc-continue="false">
+                                                        <li class="PuceNiv2" value="1"><b>Annuler </b>pour annuler le paramétrage de la construction.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Dupliquer une construction</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Vous pouvez créer une construction en dupliquant les paramètres d'une construction existante.</p>
+                                                    <ol>
+                                                        <li class="PuceNumNiv1" value="1">Dans la page de paramétrage des constructions, cliquez sur la construction à dupliquer, puis cliquez sur le bouton <b>Copier</b> dans la barre d'actions.</li>
+                                                        <li class="PuceNumNiv1" value="2">La page de création de construction s'affiche, avec les paramètres de la construction dupliquée. Seuls le code et le libellé de la construction ne sont pas renseignés.<br /></li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Resources/Images/L_Liquidity/Dupliquer construction.png"><img class="MCPopupThumbnail img imgSAGE_screenshot" data-mc-width="571" data-mc-height="578" src="../../Resources/Images/L_Liquidity/Dupliquer construction_thumb_150_100.png" tabindex="" /></a>
+                                                    </p>
+                                                    <ol start="2" data-mc-continue="true">
+                                                        <li class="PuceNumNiv1" value="3">Dans la zone <b>Construction</b>, saisissez le code de la nouvelle construction et sa description.</li>
+                                                    </ol>
+                                                    <p class="IndentPuceNiv1">Le code de la construction est un identifiant unique qui ne pourra pas être modifié ultérieurement.</p>
+                                                    <p class="IndentPuceNiv1">Vous pouvez modifier les paramètres de la construction dupliquée.</p>
+                                                    <p class="IndentPuceNiv1SautLigne">Pour plus d'informations sur ces champs, consultez la <MadCap:conditionalText data-mc-conditions="Default.ScreenOnly">rubrique</MadCap:conditionalText> précédente.</p>
+                                                </div>
+                                            </div>
+                                            <table style="mc-table-style: url('../../Resources/TableStyles/Note.css');margin-left: 50px;margin-right: auto;" class="TableStyle-Note" cellspacing="0">
+                                                <col class="TableStyle-Note-Column-Column1" />
+                                                <col class="TableStyle-Note-Column-Column2" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Note-Body-Body1">
+                                                        <td style="text-align: left;" class="TableStyle-Note-BodyB-Column1-Body1">
+                                                            <img src="../../Resources/Images/Assets/oh-Note.png" />
+                                                        </td>
+                                                        <td class="TableStyle-Note-BodyA-Column2-Body1">Dès lors qu'une structure est associée à une construction, vous ne pouvez plus retirer de nature budgétaire de cette structure. Vous pouvez cependant toujours ajouter des natures budgétaires à une structure de feuille budgétaire déjà associée à une construction.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>L'étape de paramétrage est totalement terminée une fois que vous avez complété le paramétrage de votre construction.</p>
+                                            <p>Vous pouvez passer à la création de votre feuille budgétaire, puis aux importations de données comptables et enfin aux éditions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>
